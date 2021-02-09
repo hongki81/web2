@@ -47,14 +47,19 @@
                 var items = text.split(',');
                 var tags = '';
 
+                console.log(items);
+
                 for(var i=0; i < items.length; i++) {
                     items[i].trim();
+                    console.log(items[i].trim());
                     var tag = '<li><a href="#" onclick="content(\''+ items[i] +'\')">'+ items[i] +'</a></li>';
 
                     document.querySelector('#nav').innerHTML = tags;
 
                     tags = tag + tag;
                 }
+
+                console.log(tags);
             });
         })
 
