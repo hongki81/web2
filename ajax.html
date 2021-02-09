@@ -5,7 +5,6 @@
     <title>Title</title>
     <script>
         function content(target) {
-            console.log(target.type);
             fetch(target).then(function(response){
                 response.text().then(function(text){
                     document.querySelector('article').innerHTML = text;
@@ -33,11 +32,17 @@
     <article></article>
 
     <input type="button" value="Fetch" onclick="
+        /*
         fetch('css').then(function(response){
             response.text().then(function(text){
                 alert(text);
             })
         })
+        */
+
+        fetch('css').then(function(response){
+            console.log(response);
+        });
     ">
 
 </body>
