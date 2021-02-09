@@ -43,7 +43,7 @@
         }
 
         fetch('list').then(function(response){
-            response.text().then(function(){
+            response.text().then(function(text){
                 var items = text.split(',');
 
                 for(var i=0; i < items.length; i++) {
