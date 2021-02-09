@@ -20,8 +20,8 @@
       <file leaf-file-name="ajax.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ajax.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="519">
-              <caret line="53" column="49" lean-forward="false" selection-start-line="53" selection-start-column="49" selection-end-line="53" selection-end-column="49" />
+            <state relative-caret-position="614">
+              <caret line="58" column="31" lean-forward="false" selection-start-line="58" selection-start-column="31" selection-end-line="58" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -138,12 +138,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1612836315850</updated>
-      <workItem from="1612836317128" duration="7398000" />
+      <workItem from="1612836317128" duration="7475000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7398000" />
+    <option name="totallyTimeSpent" value="7475000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="57" y="23" width="1623" height="1027" extended-state="6" />
@@ -228,8 +228,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ajax.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="519">
-          <caret line="53" column="49" lean-forward="false" selection-start-line="53" selection-start-column="49" selection-end-line="53" selection-end-column="49" />
+        <state relative-caret-position="614">
+          <caret line="58" column="31" lean-forward="false" selection-start-line="58" selection-start-column="31" selection-end-line="58" selection-end-column="31" />
           <folding />
         </state>
       </provider>
