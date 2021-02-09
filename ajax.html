@@ -45,9 +45,15 @@
         fetch('list').then(function(response){
             response.text().then(function(text){
                 var items = text.split(',');
+                items.trim();
 
                 for(var i=0; i < items.length; i++) {
-                    document.querySelector('#nav').innerHTML = "<li><a href='javascript:;' onclick=content('"+ items[i] +"');>"+ items[i] +"</a></li>";
+                    var tags = '';
+                    var tag = '<li><a href="#" onclick="content(\''+ items[i] +'\')">'+ items[i] +'</a></li>';
+
+                    document.querySelector('#nav').innerHTML = ;
+
+                    tags = tag + tag;
                 }
             });
         })
