@@ -3,18 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <script>
-        function content(target) {
-            fetch(target).then(function(response){
-                if(response.status == '404') {
-                    document.querySelector('article').innerHTML = '<div>Not Found</div>'
-                }
-                response.text().then(function(text){
-                    document.querySelector('article').innerHTML = text;
-                })
-            });
-        }
-    </script>
 </head>
 <body>
 
@@ -22,14 +10,7 @@
         <a href="#">Home</a>
     </h1>
 
-    <ol>
-        <script>
-            var nav = ['html', 'css', 'javascript', 'node'];
-
-            for(var i=0; i < nav.length; i++) {
-                document.write("<li><a href='javascript:;' onclick=content('"+ nav[i] +"');>"+ nav[i] +"</a></li>")
-            }
-        </script>
+    <ol id="nav">
     </ol>
 
     <article></article>
@@ -48,6 +29,34 @@
             console.log(response);
         });
     ">
+
+    <script>
+        function content(target) {
+            fetch(target).then(function(response){
+                if(response.status == '404') {
+                    //document.querySelector('article').innerHTML = '<div>Not Found</div>'
+                }
+                response.text().then(function(text){
+                    document.querySelector('article').innerHTML = text;
+                })
+            });
+        }
+
+        fetch('list').then(function(response){
+            var items = text.split(',');
+
+            for(var i=0; i < items.length; i++) {
+                document.querySelector('#nav').innerHTML = "<li><a href='javascript:;' onclick=content('"+ items[i] +"');>"+ items[i] +"</a></li>";
+            }
+        })
+
+        /*
+        var nav = ['html', 'css', 'javascript', 'node'];
+        for(var i=0; i < nav.length; i++) {
+            document.write("<li><a href='javascript:;' onclick=content('"+ nav[i] +"');>"+ nav[i] +"</a></li>")
+        }
+        */
+    </script>
 
 </body>
 </html>
