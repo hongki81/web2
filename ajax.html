@@ -54,12 +54,11 @@
                     console.log(items[i].trim());
                     var tag = '<li><a href="#" onclick="content(\''+ items[i] +'\')">'+ items[i] +'</a></li>';
 
-                    document.querySelector('#nav').innerHTML = tags;
-
                     tags = tags + tag;
                 }
-
                 console.log(tags);
+
+                document.querySelector('#nav').innerHTML = tags;
             });
         })
 
