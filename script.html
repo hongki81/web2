@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+
+    <input type="button" value="night" onclick="change('night');">
+    <input type="button" value="day" onclick="change('day');">
+    <input type="button" value="midnight" onclick="change('');">
+
+    <input type="button" value="black" onclick="changeTheme(this);">
+
+    <h1><a href="#">Index</a></h1>
+
+    <ul>
+        <li>List 1</li>
+        <li>List 2</li>
+        <li>List 3</li>
+    </ul>
+
+    <ol>
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+    </ol>
+
+    <p>
+        What is jQuery?
+        jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. With a combination of versatility and extensibility, jQuery has changed the way that millions of people write JavaScript.
+    </p>
+
+    <h1>Loop , Array</h1>
+
+    <script>
+        var items = ['a', 'b', 'c', 'd' ,'e'];
+    </script>
+    <ul>
+        <script>
+            var i = 0;
+            while(i < items.length) {
+                document.write('<li><a href="http://www.a.com/'+items[i]+'">'+ items[i] +'</a></li>');
+                i = i + 1;
+            }
+        </script>
+    </ul>
+
+    <script>
+        function calc(a,b){
+            document.write(a+b);
+
+            return a+b;
+        }
+
+        calc(2,4);
+    </script>
+
+    <h1>Object</h1>
+
+    <script>
+        var workers = {
+            "planner"    : "James",
+            "designer"   : "Jane",
+            "programmer" : "John"
+        };
+
+        console.log(workers.planner);
+
+        workers.subDesigner = "Roy";
+
+        console.log(workers.subDesigner);
+    </script>
+
+    <ul>
+        <script>
+            for(var key in workers) {
+                document.write("<li>" + key +" : "+ workers[key] + "</li>");
+            }
+        </script>
+    </ul>
+
+    <script>
+        workers.showAll = function() {
+            for(var key in this) {
+                document.write("<li>" + key +" : "+ this[key] + "</li>");
+            }
+        };
+    </script>
+
+    <ul>
+        <script>
+            workers.showAll();
+        </script>
+    </ul>
+
+</body>
+</html>
