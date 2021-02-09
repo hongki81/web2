@@ -34,7 +34,7 @@
         function content(target) {
             fetch(target).then(function(response){
                 if(response.status == '404') {
-                    //document.querySelector('article').innerHTML = '<div>Not Found</div>'
+                    alert('Not Found');
                 }
                 response.text().then(function(text){
                     document.querySelector('article').innerHTML = text;
@@ -43,11 +43,13 @@
         }
 
         fetch('list').then(function(response){
-            var items = text.split(',');
+            response.text().then(function(){
+                var items = text.split(',');
 
-            for(var i=0; i < items.length; i++) {
-                document.querySelector('#nav').innerHTML = "<li><a href='javascript:;' onclick=content('"+ items[i] +"');>"+ items[i] +"</a></li>";
-            }
+                for(var i=0; i < items.length; i++) {
+                    document.querySelector('#nav').innerHTML = "<li><a href='javascript:;' onclick=content('"+ items[i] +"');>"+ items[i] +"</a></li>";
+                }
+            });
         })
 
         /*
