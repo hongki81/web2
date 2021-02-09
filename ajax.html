@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <script>
-        function navi(target) {
+        function content(target) {
             console.log(target.type);
             fetch(target).then(function(response){
                 response.text().then(function(text){
@@ -22,10 +22,10 @@
 
     <ol>
         <script>
-            var navi = ['html', 'css', 'javascript'];
+            var nav = ['html', 'css', 'javascript'];
 
             for(var i=0; i < navi.length; i++) {
-                document.write("<li><a href='javascript:;' onclick=navi("+ navi[i] +");>"+ navi[i] +"</a></li>")
+                document.write("<li><a href='javascript:;' onclick=content('"+ nav[i] +"');>"+ nav[i] +"</a></li>")
             }
         </script>
     </ol>
