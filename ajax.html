@@ -45,10 +45,10 @@
         fetch('list').then(function(response){
             response.text().then(function(text){
                 var items = text.split(',');
-                items.trim();
+                var tags = '';
 
                 for(var i=0; i < items.length; i++) {
-                    var tags = '';
+                    items[i].trim();
                     var tag = '<li><a href="#" onclick="content(\''+ items[i] +'\')">'+ items[i] +'</a></li>';
 
                     document.querySelector('#nav').innerHTML = tags;
