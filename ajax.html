@@ -7,7 +7,7 @@
         function content(target) {
             fetch(target).then(function(response){
                 if(response.status == '404') {
-                    alert('Not Found');
+                    document.querySelector('article').innerHTML = '<div>Not Found</div>'
                 }
                 response.text().then(function(text){
                     document.querySelector('article').innerHTML = text;
