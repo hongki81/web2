@@ -3,7 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <script type="text/javascript" src="ajax.js"></script>
+    <script>
+        function navi(target) {
+            fetch(target).then(function(response){
+                response.text().then(function(text){
+                    document.querySelector('article').innerHTML = text;
+                })
+            });
+
+            return false;
+        }
+    </script>
 </head>
 <body>
 
