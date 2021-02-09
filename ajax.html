@@ -10,8 +10,6 @@
                     document.querySelector('article').innerHTML = text;
                 })
             });
-
-            return false;
         }
     </script>
 </head>
@@ -22,9 +20,13 @@
     </h1>
 
     <ol>
-        <li><a href="#" onclick="navi('html');">html</a></li>
-        <li><a href="#" onclick="navi('css');">css</a></li>
-        <li><a href="#" onclick="navi('javascript');">javascript</a></li>
+        <script>
+            var navi = ['html', 'css', 'javascript'];
+
+            for(var i=0; i < navi.length; i++) {
+                document.write('<li><a href="javascript:;" onclick="navi('+ navi[i] +');">'+ navi[i] +'</a></li>')
+            }
+        </script>
     </ol>
 
     <article></article>

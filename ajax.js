@@ -4,6 +4,4 @@ function navi(target) {
             document.querySelector('article').innerHTML = text;
         })
     });
-
-    return false;
 }
