@@ -11,35 +11,21 @@
         <a href="#">Home</a>
     </h1>
 
-    <h2>
-        <a href="#">html</a>
-    </h2>
-    <h2>
-        <a href="#">css</a>
-    </h2>
-    <h2>
-        <a href="#">javascript</a>
-    </h2>
+    <ol>
+        <li><a href="#">html</a></li>
+        <li><a href="#">css</a></li>
+        <li><a href="#">javascript</a></li>
+    </ol>
 
-    <h3>Home</h3>
-    <p>
-        Hello!
-    </p>
+    <article></article>
 
-    <h3>HTML</h3>
-    <p>
-        HTML Description
-    </p>
-
-    <h3>CSS</h3>
-    <p>
-        CSS Description
-    </p>
-
-    <h3>Javascript</h3>
-    <p>
-        Javascript Description
-    </p>
+    <input type="button" value="Fetch" onclick="
+        fetch('css').then(function(response){
+            response.text().then(function(text){
+                alert(text);
+            })
+        })
+    ">
 
 </body>
 </html>
