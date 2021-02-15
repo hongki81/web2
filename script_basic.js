@@ -1,0 +1,13 @@
+console.log(typeof "1");
+console.log(typeof 1);
+console.log('text');
+console.log('text\'s');
+console.log('Hello!\nWorld');
+console.log('Hello! World'.length);
+var t = 'Hello! World'.replace(' ','');
+console.log(t.length);
+console.log(t.indexOf('o'));
+console.log(1 == 1);
+console.log(1 == 2);
+console.log('one' == 'ONE');
+console.log('one' == 'one');
