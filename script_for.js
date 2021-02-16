@@ -5,7 +5,9 @@
 // }
 
 var total = 10;
-for(var j=0; j < total; j++) {
-    document.write((j+1) + ': Hello! World <br>');
+for(var i=0; i < total; i++) {
+    for(var j=0; j < 10; j++) {
+        document.write('Hello! World'+i+j+'<br>');
+    }
 }
 
