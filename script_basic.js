@@ -18,25 +18,30 @@ var itemSort = [];
 var highIndex;
 var lowIndex;
 
-for(var i=0; i < 10; i++) {
-    items[i] = Math.floor(Math.random() * 100) + 1;
-    itemSort[i] = items[i];
-}
+function randomNumber() {
+    for(var i=0; i < 10; i++) {
+        items[i] = Math.floor(Math.random() * 100) + 1;
+        itemSort[i] = items[i];
+    }
 
-itemSort.sort(function(a,b) {
-    return a - b;
-});
+    itemSort.sort(function(a,b) {
+        return a - b;
+    });
 
-console.log(items);
-console.log(itemSort);
+    //console.log(items);
+    //console.log(itemSort);
 
-for(var i=0; i < items.length; i++) {
-    if(items[i] === itemSort[0]) {
-        lowIndex = i;
-    } else if(items[i] === itemSort[itemSort.length - 1]) {
-        highIndex = i;
+    for(var i=0; i < items.length; i++) {
+        if(items[i] === itemSort[0]) {
+            lowIndex = i;
+        } else if(items[i] === itemSort[itemSort.length - 1]) {
+            highIndex = i;
+        }
     }
 }
+
+randomNumber();
+
 
 console.log(items[lowIndex] + ' / ' + lowIndex);
 console.log(items[highIndex] + ' / ' + highIndex);
