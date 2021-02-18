@@ -25,3 +25,22 @@ function getArg(arg) {
 
 console.log(getArg(1));
 console.log(getArg(2));
+
+function getArg2(arg1, arg2) {
+    return arg1 + arg2;
+}
+
+console.log(getArg2(10,20));
+console.log(getArg2(20,40));
+
+test = function() {
+    for(var i=0; i < 10; i++) {
+        document.write(i + 'Test<br>');
+    }
+}
+
+test();
+
+(function(){
+    console.log('익명 함수');
+})();
