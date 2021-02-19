@@ -24,9 +24,7 @@ function randomNumber() {
         itemSort[i] = items[i];
     }
 
-    itemSort.sort(function(a,b) {
-        return a - b;
-    });
+    itemSort.sort(sortItem);
 
     //console.log(items);
     //console.log(itemSort);
@@ -40,14 +38,20 @@ function randomNumber() {
     }
 }
 
+function sortItem(a,b) {
+    if(a === b) {
+        return randomNumber();
+    } else {
+        return a - b;
+    }
+}
+
 randomNumber();
 
 
 console.log(items[lowIndex] + ' / ' + lowIndex);
 console.log(items[highIndex] + ' / ' + highIndex);
 
-document.write('랜덤으로 추출된 숫자 : ' + items + '<br>');
-document.write('가장 높은 숫자 : ' + items[highIndex] + '<br>');
-document.write('가장 높은 숫자 인덱스 : ' + highIndex + '<br>');
-document.write('가장 낮은 숫자 : ' + items[lowIndex] + '<br>');
-document.write('가장 낮은 숫자 인덱스 : ' + lowIndex + '<br>');
+document.write('랜덤으로 추출된 숫자 : [' + items + ']<br>');
+document.write('가장 높은 숫자 : ' + items[highIndex] + ', Index : '+ highIndex +'<br>');
+document.write('가장 낮은 숫자 : ' + items[lowIndex] + ', Index : '+ lowIndex +'<br>');
