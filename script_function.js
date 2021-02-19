@@ -44,3 +44,11 @@ test();
 (function(){
     console.log('익명 함수');
 })();
+
+function a() {
+    var i = 0;
+}
+for(var i=0; i < 5; i++) {
+    a();
+    console.log(i);
+}
