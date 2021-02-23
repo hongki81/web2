@@ -21,11 +21,9 @@ var process = [
 ];
 
 var input = 6;
-
 for(var i=0; i < process.length; i++) {
     input = process[i](input);
 }
-
 console.log(input);
 
 var numbers = [30,20,10,1,2,3,4,5,6,7,8,9];
