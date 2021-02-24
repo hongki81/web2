@@ -44,23 +44,40 @@ Object.prototype.contain = function(item) {
         }
     }
     return false;
+};
+
+function containItem(obj,item) {
+    for(var key in obj) {
+        if(obj[key] === item) {
+            return true;
+        }
+    }
+    return false;
 }
 
 var a = {'name' : 'Smith', 'city' : 'Seoul'};
-console.log(a.contain('James'));
+var aR = containItem(a,'James');
+//console.log(a.contain('James'));
+console.log(aR);
 
 var b = ['Smith', 'Jane', 'Tom'];
-console.log(b.contain('Tom'));
+var bR = containItem(b,'Tom');
+//console.log(b.contain('Tom'));
+console.log(bR);
 
-function hasOwnProp(obj) {
+function hasOwnProp(obj,type) {
     for(var key in obj) {
-        if(obj.hasOwnProperty(key)) {
+        if(type === 'has') {
+            if(obj.hasOwnProperty(key)) {
+                console.log(key);
+            }
+        } else {
             console.log(key);
         }
     }
 }
 
-hasOwnProp(a);
+hasOwnProp(a,'has');
 hasOwnProp(b);
 
 
