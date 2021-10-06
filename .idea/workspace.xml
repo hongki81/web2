@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="340e558f-9b82-4ed9-956e-19592bcbeafe" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/dist/css/survey.css" afterPath="$PROJECT_DIR$/test/dist/css/survey.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -21,7 +20,7 @@
         <entry file="file://$PROJECT_DIR$/test/dist/html/Page_Share/Page_Share_Member_Mobile_1.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="333">
-              <caret line="469" column="43" lean-forward="true" selection-start-line="469" selection-start-column="43" selection-end-line="469" selection-end-column="43" />
+              <caret line="469" column="43" lean-forward="false" selection-start-line="469" selection-start-column="43" selection-end-line="469" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -45,8 +44,8 @@
       <file leaf-file-name="survey.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/dist/css/survey.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="124">
-              <caret line="0" column="240991" lean-forward="false" selection-start-line="0" selection-start-column="240991" selection-end-line="0" selection-end-column="240991" />
+            <state relative-caret-position="105">
+              <caret line="0" column="240931" lean-forward="false" selection-start-line="0" selection-start-column="240931" selection-end-line="0" selection-end-column="240931" />
               <folding>
                 <element signature="e#3171#3859#2" expanded="true" />
                 <element signature="e#3954#4154#2" expanded="true" />
@@ -189,18 +188,18 @@
                 <element signature="e#232279#232511#2" expanded="true" />
                 <element signature="e#235042#235491#2" expanded="true" />
                 <element signature="e#240110#240559#2" expanded="true" />
-                <element signature="e#242252#242467#2" expanded="true" />
-                <element signature="e#246837#247069#2" expanded="true" />
-                <element signature="e#247776#247967#2" expanded="true" />
-                <element signature="e#250337#250789#2" expanded="true" />
-                <element signature="e#266342#266728#2" expanded="true" />
-                <element signature="e#266893#267269#2" expanded="true" />
-                <element signature="e#267434#267913#2" expanded="true" />
-                <element signature="e#268078#268308#2" expanded="true" />
-                <element signature="e#268473#269022#2" expanded="true" />
-                <element signature="e#269187#269559#2" expanded="true" />
-                <element signature="e#269724#269941#2" expanded="true" />
-                <element signature="e#280431#280791#2" expanded="true" />
+                <element signature="e#242300#242515#2" expanded="true" />
+                <element signature="e#246885#247117#2" expanded="true" />
+                <element signature="e#247824#248015#2" expanded="true" />
+                <element signature="e#250385#250837#2" expanded="true" />
+                <element signature="e#266390#266776#2" expanded="true" />
+                <element signature="e#266941#267317#2" expanded="true" />
+                <element signature="e#267482#267961#2" expanded="true" />
+                <element signature="e#268126#268356#2" expanded="true" />
+                <element signature="e#268521#269070#2" expanded="true" />
+                <element signature="e#269235#269607#2" expanded="true" />
+                <element signature="e#269772#269989#2" expanded="true" />
+                <element signature="e#280479#280839#2" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -348,12 +347,12 @@
       <option name="presentableId" value="Default" />
       <updated>1612836315850</updated>
       <workItem from="1612836317128" duration="10607000" />
-      <workItem from="1633479355863" duration="3390000" />
+      <workItem from="1633479355863" duration="4060000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13997000" />
+    <option name="totallyTimeSpent" value="14667000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-3790" y="23" width="1870" height="1057" extended-state="6" />
@@ -475,7 +474,7 @@
     <entry file="file://$PROJECT_DIR$/test/dist/html/Page_Share/Page_Share_Member_Mobile_1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="333">
-          <caret line="469" column="43" lean-forward="true" selection-start-line="469" selection-start-column="43" selection-end-line="469" selection-end-column="43" />
+          <caret line="469" column="43" lean-forward="false" selection-start-line="469" selection-start-column="43" selection-end-line="469" selection-end-column="43" />
           <folding />
         </state>
       </provider>
@@ -495,8 +494,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/dist/css/survey.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="0" column="240991" lean-forward="false" selection-start-line="0" selection-start-column="240991" selection-end-line="0" selection-end-column="240991" />
+        <state relative-caret-position="105">
+          <caret line="0" column="240931" lean-forward="false" selection-start-line="0" selection-start-column="240931" selection-end-line="0" selection-end-column="240931" />
           <folding>
             <element signature="e#3171#3859#2" expanded="true" />
             <element signature="e#3954#4154#2" expanded="true" />
@@ -639,18 +638,18 @@
             <element signature="e#232279#232511#2" expanded="true" />
             <element signature="e#235042#235491#2" expanded="true" />
             <element signature="e#240110#240559#2" expanded="true" />
-            <element signature="e#242252#242467#2" expanded="true" />
-            <element signature="e#246837#247069#2" expanded="true" />
-            <element signature="e#247776#247967#2" expanded="true" />
-            <element signature="e#250337#250789#2" expanded="true" />
-            <element signature="e#266342#266728#2" expanded="true" />
-            <element signature="e#266893#267269#2" expanded="true" />
-            <element signature="e#267434#267913#2" expanded="true" />
-            <element signature="e#268078#268308#2" expanded="true" />
-            <element signature="e#268473#269022#2" expanded="true" />
-            <element signature="e#269187#269559#2" expanded="true" />
-            <element signature="e#269724#269941#2" expanded="true" />
-            <element signature="e#280431#280791#2" expanded="true" />
+            <element signature="e#242300#242515#2" expanded="true" />
+            <element signature="e#246885#247117#2" expanded="true" />
+            <element signature="e#247824#248015#2" expanded="true" />
+            <element signature="e#250385#250837#2" expanded="true" />
+            <element signature="e#266390#266776#2" expanded="true" />
+            <element signature="e#266941#267317#2" expanded="true" />
+            <element signature="e#267482#267961#2" expanded="true" />
+            <element signature="e#268126#268356#2" expanded="true" />
+            <element signature="e#268521#269070#2" expanded="true" />
+            <element signature="e#269235#269607#2" expanded="true" />
+            <element signature="e#269772#269989#2" expanded="true" />
+            <element signature="e#280479#280839#2" expanded="true" />
           </folding>
         </state>
       </provider>
