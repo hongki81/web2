@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../css/survey.css"/>
+	<title>Survey</title>
+	<style>
+		h1 {
+			font-size: 30px;
+			padding: 30px 0 20px;
+		}
+
+		.float-wrap:after {
+			display: block;
+			clear: both;
+			content: '';
+		}
+
+		.left {
+			float: left;
+			width: 44%;
+		}
+
+		.right {
+			float: right;
+			width: 44%;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div class="float-wrap">
+
+		<!-- 왼쪽 -->
+		<div class="left">
+			<h1>Pagination</h1>
+
+			<!-- Component : Pagination -->
+			<div class="component-pagination">
+				<button type="button" class="btn-page-prev"></button>
+				<div class="pagination-info">
+					<input type="number" class="input-current-page" value="0">
+					<em>/</em>
+					<span class="txt-total">1000</span>
+				</div>
+				<button type="button" class="btn-page-next"></button>
+			</div>
+			<!-- //Component : Pagination -->
+		</div>
+		<!-- //왼쪽 -->
+
+		<!-- 오른쪽 -->
+		<div class="right">
+
+		</div>
+		<!-- //오른쪽 -->
+
+	</div>
+
+</body>
+</html>

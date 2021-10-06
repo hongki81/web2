@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+	<link rel="stylesheet" href="../../css/survey.css"/>
+	<title>Survey</title>
+</head>
+
+<body>
+
+	<!-- Wrap -->
+	<div class="survey-answer-wrap">
+
+		<!-- GNB -->
+		<div class="layout-gnb">
+			<div class="container-gnb">
+				<div class="section-logo">
+					<h1 class="txt-logo">
+						<a href="javascript:;" class="link-logo">설문</a>
+					</h1>
+				</div>
+
+				<!-- 프로필 -->
+				<div class="section-profile">
+					<a href="javascript:;" class="btn-profile" aria-label="Profile"></a>
+				</div>
+				<!-- //프로필 -->
+			</div>
+		</div>
+		<!-- //GNB -->
+
+		<!-- Content -->
+		<div class="layout-content">
+
+			<!-- Page : 설문 작성 -->
+			<div class="page-survey">
+
+				<!-- 설문 응답 -->
+				<div class="survey-answer">
+					<!-- 대표 이미지 영역 -->
+					<div class="answer-top">
+						<div class="title-img" style="background-image:url(../../images/img_survey_default.png);"></div>
+					</div>
+					<!-- //대표 이미지 영역 -->
+
+					<!-- 응답 영역 -->
+					<div class="answer-content">
+						<div class="inner-content">
+							<!-- 응답 : 설문 제목 -->
+							<div class="item-survey-answer-subject">
+								<strong class="txt-title">
+									설문 제목이 들어갈 곳입니다.
+								</strong>
+								<p class="txt-desc">
+									설문지의 설명이 들어갈 곳입니다.
+								</p>
+							</div>
+							<!-- //응답 : 설문 제목 -->
+
+							<!-- 응답 : 익명 설정 -->
+							<div class="item-survey-answer-anonymous">
+							<span class="txt-desc">
+								이 설문은 <strong>익명</strong>으로 진행됩니다.
+							</span>
+							</div>
+							<!-- //응답 : 익명 설정 -->
+
+							<!-- 응답 : 설문 객관식 -->
+							<!-- [D] 필수 질문 응답 없을 시 : is-error 클래스 추가 -->
+							<div class="item-survey-answer">
+								<strong class="txt-num">Q1</strong>
+								<strong class="txt-question">
+									객관식(단일/복수) 질문이 들어갈 곳입니다.
+								</strong>
+								<strong class="txt-type">복수선택이 가능합니다.</strong>
+
+								<!-- 응답 -->
+								<div class="form-survey-answer">
+									<div class="answer-objective">
+										<!-- [D] 아이템 선택 시 : aria-selected=true -->
+										<a href="javascript:;" class="item-objective" aria-selected="true">
+											<span class="txt-item">응답 옵션</span>
+										</a>
+
+										<a href="javascript:;" class="item-objective" aria-selected="false">
+											<span class="txt-item">응답 옵션</span>
+										</a>
+
+										<a href="javascript:;" class="item-objective" aria-selected="false">
+											<span class="txt-item">응답 옵션</span>
+										</a>
+
+										<!-- 기타 유형 -->
+										<div class="item-objective" aria-selected="true">
+											<span class="txt-item">기타</span>
+
+											<div class="component-textarea">
+												<textarea class="input-etc"></textarea>
+											</div>
+										</div>
+										<!-- //기타 유형 -->
+									</div>
+								</div>
+								<!-- //응답 -->
+
+								<!-- 에러 메세지 -->
+								<div class="txt-error">필수 질문입니다.</div>
+								<!-- //에러 메세지 -->
+							</div>
+							<!-- //응답 : 설문 객관식 -->
+
+							<!-- 응답 : 설문 객관식 + 이미지 -->
+							<!-- [D] 필수 질문 응답 없을 시 : is-error 클래스 추가 -->
+							<div class="item-survey-answer">
+								<strong class="txt-num">Q2</strong>
+								<strong class="txt-question">
+									객관식(이미지 포함) 질문이 들어갈 곳입니다.
+								</strong>
+
+								<!-- 응답 -->
+								<div class="form-survey-answer">
+
+									<!--
+										[D] 보기 배치 클래스 정의
+										type-a : 2개, 4개
+										type-b : 3개, 5개, 6개
+									-->
+									<div class="answer-image-objective type-b">
+
+										<ol class="list-objective">
+											<li>
+												<!-- [D] 아이템 선택 시 : aria-selected=true -->
+												<a href="javascript:;" class="item-image" aria-selected="false">
+													<!-- [D] 이미지 없는 유형 : is-nodata 클래스 추가 -->
+													<span class="img-item is-nodata" style="background-image:url();">
+														<button type="button" class="btn-icon size-32 type-circle type-opacity type-view"><i></i></button>
+														<span class="img-nodata"></span>
+													</span>
+													<span class="txt-item">응답 옵션</span>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:;" class="item-image" aria-selected="true">
+													<!-- [D] 이미지 없는 유형 : is-nodata 클래스 추가 -->
+													<span class="img-item" style="background-image:url(../../images/img_survey_default.png);">
+														<button type="button" class="btn-icon size-32 type-circle type-opacity type-view"><i></i></button>
+														<span class="img-nodata"></span>
+													</span>
+													<span class="txt-item">응답 옵션</span>
+												</a>
+											</li>
+											<li>
+												<!-- 기타 유형 -->
+												<!-- [D] 아이템 선택 시 : aria-selected=true -->
+												<div class="item-image" aria-selected="true">
+													<div class="etc-item">
+														<div class="component-textarea">
+															<textarea class="input-etc"></textarea>
+														</div>
+													</div>
+													<span class="txt-item">응답 옵션</span>
+												</div>
+												<!-- //기타 유형 -->
+											</li>
+										</ol>
+
+									</div>
+
+								</div>
+								<!-- //응답 -->
+
+								<!-- 에러 메세지 -->
+								<div class="txt-error">필수 질문입니다.</div>
+								<!-- //에러 메세지 -->
+							</div>
+							<!-- //응답 : 설문 객관식 + 이미지 -->
+
+							<!-- 응답 : 설문 주관식 -->
+							<div class="item-survey-answer">
+								<strong class="txt-num">Q3</strong>
+								<strong class="txt-question">
+									주관식 질문이 들어갈 곳입니다.
+								</strong>
+
+								<!-- 응답 -->
+								<div class="form-survey-answer">
+									<div class="answer-subjective">
+										<div class="component-textarea">
+											<textarea class="textarea-answer" placeholder="의견을 적어주세요."></textarea>
+											<em></em>
+										</div>
+									</div>
+								</div>
+								<!-- //응답 -->
+
+								<!-- 에러 메세지 -->
+								<div class="txt-error">필수 질문입니다.</div>
+								<!-- //에러 메세지 -->
+							</div>
+							<!-- //응답 : 설문 주관식 -->
+
+							<!-- 응답 : 설문 선형 배율 -->
+							<div class="item-survey-answer">
+								<strong class="txt-num">Q4</strong>
+								<strong class="txt-question">
+									선형 배율 질문이 들어갈 곳입니다.
+								</strong>
+
+								<!-- 응답 -->
+								<div class="form-survey-answer">
+									<div class="answer-linear">
+										<div class="linear-items">
+											<!-- [D] 아이템 선택 시 : aria-selected=true -->
+											<a href="javascript:;" class="item-linear" aria-selected="false">1</a>
+											<a href="javascript:;" class="item-linear" aria-selected="false">2</a>
+											<a href="javascript:;" class="item-linear" aria-selected="true">3</a>
+											<a href="javascript:;" class="item-linear" aria-selected="false">4</a>
+											<a href="javascript:;" class="item-linear" aria-selected="false">5</a>
+										</div>
+										<div class="linear-label">
+											<div class="txt-first">불만족</div>
+											<div class="txt-last">만족</div>
+										</div>
+									</div>
+								</div>
+								<!-- //응답 -->
+
+								<!-- 에러 메세지 -->
+								<div class="txt-error">필수 질문입니다.</div>
+								<!-- //에러 메세지 -->
+							</div>
+							<!-- //응답 : 설문 선형 배율 -->
+
+							<!-- 응답 : 설문 별점 -->
+							<div class="item-survey-answer is-error">
+								<strong class="txt-num">Q5</strong>
+								<strong class="txt-question">
+									별점 질문이 들어갈 곳입니다.
+								</strong>
+
+								<!-- 응답 -->
+								<div class="form-survey-answer">
+									<div class="answer-star-rating">
+										<div class="group-rating">
+											<div class="item-rating">
+												<input type="radio" name="star-rating" value="5" id="rating-50">
+												<label class="label-rating" for="rating-50"></label>
+												<input type="radio" name="star-rating" value="4.5" id="rating-45">
+												<label class="label-rating type-half" for="rating-45"></label>
+
+												<input type="radio" name="star-rating" value="4" id="rating-40">
+												<label class="label-rating" for="rating-40"></label>
+												<input type="radio" name="star-rating" value="3.5" id="rating-35">
+												<label class="label-rating type-half" for="rating-35"></label>
+
+												<input type="radio" name="star-rating" value="3" id="rating-30">
+												<label class="label-rating" for="rating-30"></label>
+												<input type="radio" name="star-rating" value="2.5" id="rating-25">
+												<label class="label-rating type-half" for="rating-25"></label>
+
+												<input type="radio" name="star-rating" value="2" id="rating-20">
+												<label class="label-rating" for="rating-20"></label>
+												<input type="radio" name="star-rating" value="1.5" id="rating-15">
+												<label class="label-rating type-half" for="rating-15"></label>
+
+												<input type="radio" name="star-rating" value="1" id="rating-10">
+												<label class="label-rating" for="rating-10"></label>
+												<input type="radio" name="star-rating" value="0.5" id="rating-05">
+												<label class="label-rating type-half" for="rating-05"></label>
+											</div>
+										</div>
+										<div class="group-score">
+											<div class="item-score">
+												<strong class="txt-rating">2.5점</strong>
+												<em>/</em>
+												<span class="txt-total">5점</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- //응답 -->
+
+								<!-- 에러 메세지 -->
+								<div class="txt-error">필수 질문입니다.</div>
+								<!-- //에러 메세지 -->
+							</div>
+							<!-- //응답 : 설문 별점 -->
+
+							<!-- 응답 : 설문 감정바 -->
+							<div class="item-survey-answer">
+								<strong class="txt-num">Q6</strong>
+								<strong class="txt-question">
+									감정바 질문이 들어갈 곳입니다.
+								</strong>
+
+								<!-- 응답 -->
+								<div class="form-survey-answer">
+
+									<div class="answer-range-slider">
+										<!-- Component : RANGE SLIDER -->
+										<div class="component-slider">
+											<div class="is-a">
+												<input type="text" id="rangeSlider01">
+											</div>
+										</div>
+										<!-- Component : RANGE SLIDER -->
+
+										<div class="total-group">
+											<strong class="txt-value">0</strong>
+											<em>/</em>
+											<span class="txt-total">100%</span>
+										</div>
+									</div>
+
+								</div>
+								<!-- //응답 -->
+
+								<!-- 에러 메세지 -->
+								<div class="txt-error">필수 질문입니다.</div>
+								<!-- //에러 메세지 -->
+							</div>
+							<!-- //응답 : 설문 감정바 -->
+
+							<!-- 응답 : 설문 소주제 -->
+							<div class="item-survey-answer type-sub">
+								<strong class="txt-title-sub">
+									소주제의 제목이 들어갈 곳입니다.
+								</strong>
+								<p class="txt-desc-sub">
+									소주제의 설명이 들어갈 곳입니다.
+								</p>
+							</div>
+							<!-- //응답 : 설문 소주제 -->
+
+							<!-- 제출 버튼 -->
+							<div class="buttons">
+								<button type="button" class="btn-primary" onclick="moveAnswerRequired('.is-error');">응답 제출</button>
+							</div>
+							<!-- 제출 버튼 -->
+						</div>
+					</div>
+					<!-- //응답 영역 -->
+				</div>
+				<!-- //설문 응답 -->
+
+				<!-- 진행 상태 -->
+				<div class="layer-progress">
+					<div class="fix-progress">
+						<div class="box-progress">
+							<div class="progress-info">
+								<div class="info-percent">
+									<span class="txt-percent">0%</span>
+									<span class="txt-status">진행중</span>
+								</div>
+								<div class="info-total">
+									<span class="txt-current">5</span>
+									<em>/</em>
+									<span class="txt-total">15</span>
+								</div>
+							</div>
+							<div class="progress-bar">
+								<em style="width:25%;"></em>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //진행 상태 -->
+
+			</div>
+			<!-- //Page : 설문 작성 -->
+
+		</div>
+		<!-- //Content -->
+
+	</div>
+	<!-- //Wrap -->
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="../../js/ion.rangeSlider.min.js"></script>
+	<script type="text/javascript" src="../../js/ui.js"></script>
+
+</body>
+</html>

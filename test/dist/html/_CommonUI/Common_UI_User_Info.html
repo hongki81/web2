@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../css/survey.css"/>
+	<title>Survey</title>
+	<style>
+		h1 {
+			font-size: 30px;
+			padding: 30px 0 20px;
+		}
+
+		.float-wrap:after {
+			display: block;
+			clear: both;
+			content: '';
+		}
+
+		.left {
+			float: left;
+			width: 44%;
+		}
+
+		.right {
+			float: right;
+			width: 44%;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div class="float-wrap">
+
+		<!-- 왼쪽 -->
+		<div class="left">
+			<h1>사용자 정보</h1>
+
+			<!-- Common UI : 사용자 정보 -->
+			<div class="common-ui-user-info">
+				<div class="flex-img">
+					<img src="../../images/img_default.png">
+				</div>
+				<div class="flex-auto">
+					<div class="user-info">
+						<span class="txt-name"><em>j</em><em>o</em>ey.lee (이조이)</span>
+						<span class="txt-class">팀원 / 대화형 플랫폼셀</span>
+					</div>
+				</div>
+				<div class="flex-btn">
+					<button type="button" class="btn-delete"></button>
+				</div>
+			</div>
+			<!-- //Common UI : 사용자 정보 -->
+
+			<br><br>
+
+			<!-- Common UI : 사용자 정보 -->
+			<div class="common-ui-user-info type-work">
+				<div class="flex-img">
+					<img src="../../images/img_default.png">
+				</div>
+				<div class="flex-auto">
+					<div class="user-info">
+						<span class="txt-name"><em>j</em><em>o</em>ey.lee (이조이)</span>
+						<span class="txt-class">팀원 / 대화형 플랫폼셀</span>
+					</div>
+				</div>
+				<div class="flex-dropdown">
+					<span class="txt-owner">소유자</span>
+				</div>
+			</div>
+			<!-- //Common UI : 사용자 정보 -->
+
+			<br><br>
+
+			<!-- Common UI : 사용자 정보 -->
+			<div class="common-ui-user-info type-work">
+				<div class="flex-img">
+					<img src="../../images/img_default.png">
+				</div>
+				<div class="flex-auto">
+					<div class="user-info">
+						<span class="txt-name"><em>j</em><em>o</em>ey.lee (이조이)</span>
+						<span class="txt-class">팀원 / 대화형 플랫폼셀</span>
+					</div>
+				</div>
+				<div class="flex-dropdown">
+					<!-- Component : Dropdown -->
+					<!-- [D] 레이어 노출 : aria-expanded=true -->
+					<div class="component-dropdown-time type-large" aria-expanded="true">
+						<span class="txt-label">뷰어</span>
+
+						<!-- Layer : Dropdown -->
+						<div class="layer-dropdown">
+							<div class="box-dropdown">
+								<div class="item-option">
+									<input type="radio" id="option02">
+									<label class="txt-label" for="option02">뷰어</label>
+								</div>
+
+								<div class="item-option">
+									<input type="radio" id="option03">
+									<label class="txt-label" for="option03">멤버 삭제</label>
+								</div>
+							</div>
+						</div>
+						<!-- //Layer : Dropdown -->
+					</div>
+					<!-- //Component : Dropdown -->
+				</div>
+			</div>
+			<!-- //Common UI : 사용자 정보 -->
+		</div>
+		<!-- //왼쪽 -->
+
+		<!-- 오른쪽 -->
+		<div class="right">
+
+		</div>
+		<!-- //오른쪽 -->
+
+	</div>
+
+</body>
+</html>

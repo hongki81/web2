@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/litepicker/dist/css/litepicker.css"/>
+	<link rel="stylesheet" href="../../css/survey.css"/>
+	<title>Survey</title>
+</head>
+
+<body>
+
+	<!-- Wrap -->
+	<div class="survey-wrap">
+
+		<!-- GNB -->
+		<div class="layout-gnb">
+			<div class="container-gnb">
+				<div class="section-back">
+					<a href="javascript:;" class="btn-back" aria-label="Back"></a>
+				</div>
+
+				<div class="section-nav">
+					<!-- [D] 메뉴 선택 시 aria-selected=true -->
+					<a href="javascript:;" class="link-nav" aria-selected="false">제작</a>
+					<a href="javascript:;" class="link-nav" aria-selected="true">공유</a>
+					<a href="javascript:;" class="link-nav" aria-selected="false">결과</a>
+				</div>
+
+				<!-- 미리보기, 공동작업 -->
+				<div class="section-sub">
+					<button class="btn-sub">공동작업</button>
+				</div>
+				<!-- //미리보기, 공동작업 -->
+			</div>
+		</div>
+		<!-- //GNB -->
+
+		<!-- Content -->
+		<div class="layout-content">
+
+			<!-- Page : 설문 공유 -->
+			<div class="page-share">
+				<!-- PC 공유 -->
+				<div class="share-desktop">
+					<!-- STEP 01 -->
+					<!-- [D] 해당 스텝 활성화 : aria-selected=true -->
+					<div class="share-step type-01" aria-selected="true">
+						<div class="section-title">
+							<h2 class="txt-title">
+								<em>1</em>설문 기간과 대상
+							</h2>
+							<div class="button-area">
+								<button type="button" class="btn-default type-medium type-w">버튼</button>
+							</div>
+						</div>
+
+						<!-- Tab -->
+						<div class="section-tab">
+							<div class="item-tab" aria-selected="false">
+								<div class="tab-area">
+									<span class="txt-title">시작일</span>
+									<div class="date-block">
+										<span class="txt-date">12월 31일 (수)</span>
+										<!-- Component : Dropdown -->
+										<!-- [D] 레이어 노출 : aria-expanded=true -->
+										<div class="component-dropdown-time" aria-expanded="false">
+											<span class="txt-label">오전 10:30</span>
+
+											<!-- Layer : Dropdown -->
+											<div class="layer-dropdown">
+												<div class="box-dropdown">
+													<div class="item-option">
+														<input type="radio" id="option01" disabled>
+														<label class="txt-label" for="option01">오전 09:30</label>
+													</div>
+
+													<div class="item-option">
+														<input type="radio" id="option02">
+														<label class="txt-label" for="option02">오전 10:00</label>
+													</div>
+
+													<div class="item-option">
+														<input type="radio" id="option03">
+														<label class="txt-label" for="option03">오전 10:30</label>
+													</div>
+												</div>
+											</div>
+											<!-- //Layer : Dropdown -->
+										</div>
+										<!-- //Component : Dropdown -->
+									</div>
+								</div>
+
+								<a href="" class="link-tab"></a>
+							</div>
+							<div class="item-tab" aria-selected="false">
+								<div class="tab-area">
+									<span class="txt-title">종료일</span>
+									<div class="date-block">
+										<span class="txt-date">12월 31일 (수)</span>
+										<!-- Component : Dropdown -->
+										<!-- [D] 레이어 노출 : aria-expanded=true -->
+										<div class="component-dropdown-time" aria-expanded="false">
+											<span class="txt-label">오전 10:30</span>
+
+											<!-- Layer : Dropdown -->
+											<div class="layer-dropdown">
+												<div class="box-dropdown">
+													<div class="item-option">
+														<input type="radio" id="option01" disabled>
+														<label class="txt-label" for="option01">오전 09:30</label>
+													</div>
+
+													<div class="item-option">
+														<input type="radio" id="option02">
+														<label class="txt-label" for="option02">오전 10:00</label>
+													</div>
+
+													<div class="item-option">
+														<input type="radio" id="option03">
+														<label class="txt-label" for="option03">오전 10:30</label>
+													</div>
+												</div>
+											</div>
+											<!-- //Layer : Dropdown -->
+										</div>
+										<!-- //Component : Dropdown -->
+									</div>
+								</div>
+
+								<a href="" class="link-tab"></a>
+							</div>
+							<div class="item-tab" aria-selected="true">
+								<div class="tab-area">
+									<span class="txt-title">대상</span>
+									<strong class="txt-member">999명</strong>
+								</div>
+
+								<a href="" class="link-tab"></a>
+							</div>
+						</div>
+						<!-- //Tab -->
+
+						<!-- 기간 선택 -->
+						<!-- //기간 선택 -->
+
+						<!-- 대상자 선택 -->
+						<div class="section-member">
+							<!-- 조직/멤버 검색 -->
+							<!-- [D] 검색 시 is-search 클래스 추가 -->
+							<div class="search-area is-search">
+								<!-- 검색 -->
+								<div class="search-block">
+									<!-- Component : AutoComplete -->
+									<div class="component-autocomplete">
+										<!-- [D] 키 입력되면 is-clear 클래스 추가 -->
+										<div class="box-search is-clear">
+											<input type="text" class="input-search" placeholder="멤버 또는 조직명을 검색해보세요.">
+											<button type="button" class="btn-clear"></button>
+										</div>
+									</div>
+									<!-- //Component : AutoComplete -->
+								</div>
+								<!-- //검색 -->
+
+								<!-- 검색 결과 영역 -->
+								<div class="result-block">
+									<!-- 기본 목록 -->
+									<ul class="list-item">
+										<li>
+											<!-- Common UI : 그룹 정보 -->
+											<div class="common-ui-group-info">
+												<div class="flex-check">
+													<!-- Component : Checkbox -->
+													<div class="component-checkbox type-none">
+														<input type="checkbox" id="checkbox01">
+														<label class="txt-label" for="checkbox01">
+															<em></em>
+														</label>
+													</div>
+													<!-- //Component : Checkbox -->
+												</div>
+												<div class="flex-img">
+													<img src="../../images/img_group_default.png">
+												</div>
+												<div class="flex-auto">
+													<div class="group-info">
+														<em class="txt-total">999</em>
+														<span class="txt-group">
+														<em>카</em>카오엔터프라이즈
+													</span>
+													</div>
+												</div>
+												<div class="flex-btn">
+													<button type="button" class="btn-move"></button>
+												</div>
+											</div>
+											<!-- //Common UI : 그룹 정보 -->
+										</li>
+										<li>
+											<!-- Common UI : 그룹 정보 -->
+											<div class="common-ui-group-info">
+												<div class="flex-check">
+													<!-- Component : Checkbox -->
+													<div class="component-checkbox type-none">
+														<input type="checkbox" id="checkbox01">
+														<label class="txt-label" for="checkbox01">
+															<em></em>
+														</label>
+													</div>
+													<!-- //Component : Checkbox -->
+												</div>
+												<div class="flex-img">
+													<img src="../../images/img_group_default.png">
+												</div>
+												<div class="flex-auto">
+													<div class="group-info">
+														<em class="txt-total">999</em>
+														<span class="txt-group">카카오엔터프라이즈</span>
+													</div>
+												</div>
+												<div class="flex-btn">
+													<button type="button" class="btn-move"></button>
+												</div>
+											</div>
+											<!-- //Common UI : 그룹 정보 -->
+										</li>
+										<li>
+											<!-- Common UI : 그룹 정보 -->
+											<div class="common-ui-group-info">
+												<div class="flex-check">
+													<!-- Component : Checkbox -->
+													<div class="component-checkbox type-none">
+														<input type="checkbox" id="checkbox01">
+														<label class="txt-label" for="checkbox01">
+															<em></em>
+														</label>
+													</div>
+													<!-- //Component : Checkbox -->
+												</div>
+												<div class="flex-img">
+													<img src="../../images/img_default.png">
+												</div>
+												<div class="flex-auto">
+													<div class="user-info">
+														<span class="txt-name">joey.lee (<em>이</em>조이)</span>
+														<span class="txt-class">팀원 / <em>대</em>화형 플랫폼셀</span>
+													</div>
+												</div>
+											</div>
+											<!-- //Common UI : 그룹 정보 -->
+										</li>
+										<li>
+											<!-- Common UI : 그룹 정보 -->
+											<div class="common-ui-group-info">
+												<div class="flex-check">
+													<!-- Component : Checkbox -->
+													<div class="component-checkbox type-none">
+														<input type="checkbox" id="checkbox01">
+														<label class="txt-label" for="checkbox01">
+															<em></em>
+														</label>
+													</div>
+													<!-- //Component : Checkbox -->
+												</div>
+												<div class="flex-img">
+													<img src="../../images/img_default.png">
+												</div>
+												<div class="flex-auto">
+													<div class="user-info">
+														<span class="txt-name">joey.lee (이조이)</span>
+														<span class="txt-class">팀원 / 대화형 플랫폼셀</span>
+													</div>
+												</div>
+											</div>
+											<!-- //Common UI : 그룹 정보 -->
+										</li>
+									</ul>
+									<!-- //기본 목록 -->
+
+									<!-- 그룹 선택 > 목록 -->
+									<div class="group-depth-list">
+										<div class="group-breadcrumb">
+											<!-- Common UI : 조직 정보 -->
+											<div class="common-ui-dept-info">
+												<span class="txt-dept">카카오엔터프라이즈</span>
+												<span class="txt-dept">COO</span>
+												<span class="txt-dept">비즈니스플랫폼서비스실</span>
+											</div>
+											<!-- //Common UI : 조직 정보 -->
+										</div>
+
+										<!-- Member 목록 -->
+										<div class="member-list">
+										<span class="txt-dept">
+											UX1실<em>6</em>
+										</span>
+											<ul class="list-item">
+												<li>
+													<!-- Common UI : 그룹 정보 -->
+													<div class="common-ui-group-info">
+														<div class="flex-check">
+															<!-- Component : Checkbox -->
+															<div class="component-checkbox type-none">
+																<input type="checkbox" id="checkbox01">
+																<label class="txt-label" for="checkbox01">
+																	<em></em>
+																</label>
+															</div>
+															<!-- //Component : Checkbox -->
+														</div>
+														<div class="flex-img">
+															<img src="../../images/img_default.png">
+														</div>
+														<div class="flex-auto">
+															<div class="user-info">
+																<span class="txt-name">joey.lee (이조이)</span>
+																<span class="txt-class">팀원 / 대화형 플랫폼셀</span>
+															</div>
+														</div>
+													</div>
+													<!-- //Common UI : 그룹 정보 -->
+												</li>
+												<li>
+													<!-- Common UI : 그룹 정보 -->
+													<div class="common-ui-group-info">
+														<div class="flex-check">
+															<!-- Component : Checkbox -->
+															<div class="component-checkbox type-none">
+																<input type="checkbox" id="checkbox01">
+																<label class="txt-label" for="checkbox01">
+																	<em></em>
+																</label>
+															</div>
+															<!-- //Component : Checkbox -->
+														</div>
+														<div class="flex-img">
+															<img src="../../images/img_default.png">
+														</div>
+														<div class="flex-auto">
+															<div class="user-info">
+																<span class="txt-name">joey.lee (이조이)</span>
+																<span class="txt-class">팀원 / 대화형 플랫폼셀</span>
+															</div>
+														</div>
+													</div>
+													<!-- //Common UI : 그룹 정보 -->
+												</li>
+											</ul>
+										</div>
+										<!-- //Member 목록 -->
+									</div>
+									<!-- //그룹 선택 > 목록 -->
+
+									<!-- Nodata -->
+									<!-- [D] 숨김 처리 : aria-hidden=true -->
+									<div class="nodata-search" aria-hidden="true">
+										<span class="txt-nodata">검색 결과를 찾을 수 없어요.</span>
+									</div>
+									<!-- //Nodata -->
+								</div>
+								<!-- //검색 결과 영역 -->
+
+								<!-- 내 소속 -->
+								<div class="my-block">
+									<strong class="txt-title">
+										내소속<em>8</em>
+									</strong>
+
+									<!-- Common UI : 소속 정보 -->
+									<div class="common-ui-class-info">
+										<button type="button" class="btn-class">개발자소원수리TF</button>
+										<button type="button" class="btn-class">데이터서비스실</button>
+										<button type="button" class="btn-class">상임윤리위원회</button>
+										<button type="button" class="btn-class">개발자소원수리TF</button>
+										<button type="button" class="btn-class">데이터서비스실</button>
+										<button type="button" class="btn-class">상임윤리위원회</button>
+									</div>
+									<!-- //Common UI : 소속 정보 -->
+								</div>
+								<!-- //내 소속 -->
+
+								<!-- 조직 -->
+								<div class="dept-block">
+									<!-- Common UI : 조직 정보 -->
+									<div class="common-ui-dept-info">
+										<span class="txt-dept">카카오엔터프라이즈</span>
+										<span class="txt-dept">COO</span>
+										<span class="txt-dept">비즈니스플랫폼서비스실</span>
+									</div>
+									<!-- //Common UI : 조직 정보 -->
+								</div>
+								<!-- //조직 -->
+
+								<!-- 목록 -->
+								<div class="list-block">
+									<!-- 그룹 목록 -->
+									<div class="group-list">
+										<div class="item-all">
+											<!-- Common UI : 그룹 정보 -->
+											<div class="common-ui-group-info">
+												<div class="flex-check">
+													<!-- Component : Checkbox -->
+													<div class="component-checkbox type-none">
+														<input type="checkbox" id="checkbox01">
+														<label class="txt-label" for="checkbox01">
+															<em></em>
+														</label>
+													</div>
+													<!-- //Component : Checkbox -->
+												</div>
+												<div class="flex-img">
+													<img src="../../images/img_group_default.png">
+												</div>
+												<div class="flex-auto">
+													<div class="group-info">
+														<em class="txt-total">999</em>
+														<span class="txt-group">카카오엔터프라이즈</span>
+													</div>
+												</div>
+												<div class="flex-btn">
+													<button type="button" class="btn-move"></button>
+												</div>
+											</div>
+											<!-- //Common UI : 그룹 정보 -->
+										</div>
+
+										<ul class="list-item">
+											<li>
+												<!-- Common UI : 그룹 정보 -->
+												<div class="common-ui-group-info">
+													<div class="flex-check">
+														<!-- Component : Checkbox -->
+														<div class="component-checkbox type-none">
+															<input type="checkbox" id="checkbox01">
+															<label class="txt-label" for="checkbox01">
+																<em></em>
+															</label>
+														</div>
+														<!-- //Component : Checkbox -->
+													</div>
+													<div class="flex-img">
+														<img src="../../images/img_group_default.png">
+													</div>
+													<div class="flex-auto">
+														<div class="group-info">
+															<em class="txt-total">999</em>
+															<span class="txt-group">카카오엔터프라이즈</span>
+														</div>
+													</div>
+													<div class="flex-btn">
+														<button type="button" class="btn-move"></button>
+													</div>
+												</div>
+												<!-- //Common UI : 그룹 정보 -->
+											</li>
+											<li>
+												<!-- Common UI : 그룹 정보 -->
+												<div class="common-ui-group-info">
+													<div class="flex-check">
+														<!-- Component : Checkbox -->
+														<div class="component-checkbox type-none">
+															<input type="checkbox" id="checkbox01">
+															<label class="txt-label" for="checkbox01">
+																<em></em>
+															</label>
+														</div>
+														<!-- //Component : Checkbox -->
+													</div>
+													<div class="flex-img">
+														<img src="../../images/img_group_default.png">
+													</div>
+													<div class="flex-auto">
+														<div class="group-info">
+															<em class="txt-total">999</em>
+															<span class="txt-group">카카오엔터프라이즈</span>
+														</div>
+													</div>
+													<div class="flex-btn">
+														<button type="button" class="btn-move"></button>
+													</div>
+												</div>
+												<!-- //Common UI : 그룹 정보 -->
+											</li>
+										</ul>
+									</div>
+									<!-- //그룹 목록 -->
+
+									<!-- Member 목록 -->
+									<div class="member-list">
+										<span class="txt-dept">
+											UX1실<em>6</em>
+										</span>
+										<ul class="list-item">
+											<li>
+												<!-- Common UI : 그룹 정보 -->
+												<div class="common-ui-group-info">
+													<div class="flex-check">
+														<!-- Component : Checkbox -->
+														<div class="component-checkbox type-none">
+															<input type="checkbox" id="checkbox01">
+															<label class="txt-label" for="checkbox01">
+																<em></em>
+															</label>
+														</div>
+														<!-- //Component : Checkbox -->
+													</div>
+													<div class="flex-img">
+														<img src="../../images/img_default.png">
+													</div>
+													<div class="flex-auto">
+														<div class="user-info">
+															<span class="txt-name">joey.lee (이조이)</span>
+															<span class="txt-class">팀원 / 대화형 플랫폼셀</span>
+														</div>
+													</div>
+												</div>
+												<!-- //Common UI : 그룹 정보 -->
+											</li>
+											<li>
+												<!-- Common UI : 그룹 정보 -->
+												<div class="common-ui-group-info">
+													<div class="flex-check">
+														<!-- Component : Checkbox -->
+														<div class="component-checkbox type-none">
+															<input type="checkbox" id="checkbox01">
+															<label class="txt-label" for="checkbox01">
+																<em></em>
+															</label>
+														</div>
+														<!-- //Component : Checkbox -->
+													</div>
+													<div class="flex-img">
+														<img src="../../images/img_default.png">
+													</div>
+													<div class="flex-auto">
+														<div class="user-info">
+															<span class="txt-name">joey.lee (이조이)</span>
+															<span class="txt-class">팀원 / 대화형 플랫폼셀</span>
+														</div>
+													</div>
+												</div>
+												<!-- //Common UI : 그룹 정보 -->
+											</li>
+										</ul>
+									</div>
+									<!-- //Member 목록 -->
+								</div>
+								<!-- //목록 -->
+							</div>
+							<!-- //조직/멤버 검색 -->
+
+							<!-- 선택한 대상 -->
+							<div class="select-area">
+								<div class="title-block">
+									<strong class="txt-title">
+										선택한 설문 대상<em>999</em>
+									</strong>
+
+									<button type="button" class="btn-default type-small type-border">전체 삭제</button>
+								</div>
+
+								<div class="list-block">
+									<ul class="list-member">
+										<li>
+											<!-- Common UI : 사용자 정보 -->
+											<div class="common-ui-user-info">
+												<div class="flex-img">
+													<img src="../../images/img_default.png">
+												</div>
+												<div class="flex-auto">
+													<div class="user-info">
+														<span class="txt-name">joey.lee (이조이)</span>
+														<span class="txt-class">팀원 / 대화형 플랫폼셀</span>
+													</div>
+												</div>
+												<div class="flex-btn">
+													<button type="button" class="btn-delete"></button>
+												</div>
+											</div>
+											<!-- //Common UI : 사용자 정보 -->
+										</li>
+										<li>
+											<!-- Common UI : 사용자 정보 -->
+											<div class="common-ui-user-info">
+												<div class="flex-img">
+													<img src="../../images/img_default.png">
+												</div>
+												<div class="flex-auto">
+													<div class="user-info">
+														<span class="txt-name">joey.lee (이조이)</span>
+														<span class="txt-class">팀원 / 대화형 플랫폼셀</span>
+													</div>
+												</div>
+												<div class="flex-btn">
+													<button type="button" class="btn-delete"></button>
+												</div>
+											</div>
+											<!-- //Common UI : 사용자 정보 -->
+										</li>
+									</ul>
+								</div>
+							</div>
+							<!-- //선택한 대상 -->
+						</div>
+						<!-- //대상자 선택 -->
+
+						<div class="section-release">
+							<div class="check-area">
+								<!-- Component : Checkbox -->
+								<div class="component-checkbox">
+									<input type="checkbox" id="checkbox01">
+									<label class="txt-label" for="checkbox01">
+										<em></em>
+										<span>설문홈의 참여함으로 전송</span>
+									</label>
+								</div>
+								<!-- //Component : Checkbox -->
+
+								<div class="help-block">
+									<span class="txt-help">참여함에 설문을 보내지 않아도 링크를 통한 응답은 가능합니다.</span>
+								</div>
+							</div>
+							<div class="button-area">
+								<button type="button" class="btn-primary">배포하기</button>
+							</div>
+						</div>
+					</div>
+					<!-- //STEP 01 -->
+
+					<!-- STEP 02 -->
+					<!-- [D] 해당 스텝 활성화 : aria-selected=true -->
+					<div class="share-step type-02" aria-selected="false">
+						<div class="section-title">
+							<h2 class="txt-title">
+								<em>2</em>설문 공유
+							</h2>
+						</div>
+
+						<!-- 설문 공유 -->
+						<div class="section-share">
+							<div class="share-area">
+								<strong class="txt-release">
+									제목없는 설문의 배포가 완료되었습니다.
+								</strong>
+								<span class="txt-desc">
+									응답자들은 이 설문을 설문 홈에서 확인할 수 있습니다.
+								</span>
+							</div>
+							<div class="copy-area">
+								<div class="link-block">
+									<span class="txt-link">https://www.figma.com/file/NPZ9E1GT0jc9nWYMdAn7Gr/Kakaowork-Survey</span>
+								</div>
+								<div class="button-block">
+									<a href="" class="link-copy">링크 복사</a>
+								</div>
+							</div>
+							<div class="button-area">
+								<button type="button" class="btn-icon size-56 type-circle type-kakaowork" data-tooltip="카웍 보내기" data-direction="up"><i></i></button>
+								<button type="button" class="btn-icon size-56 type-circle type-email" data-tooltip="메일 보내기" data-direction="up"><i></i></button>
+							</div>
+						</div>
+						<!-- //설문 공유 -->
+					</div>
+					<!-- //STEP 02 -->
+				</div>
+				<!-- //PC 공유 -->
+
+				<!-- 모바일 공유 -->
+				<div class="share-mobile">
+					<!-- Title -->
+					<div class="section-title">
+						<h2 class="txt-title">설문 기간과 대상</h2>
+						<div class="step-area">
+							<span class="txt-step" aria-selected="true">1</span>
+							<span class="txt-step" aria-selected="false">2</span>
+						</div>
+					</div>
+					<!-- //Title -->
+
+					<!-- Step 01 -->
+					<div class="share-step">
+						<!-- 날짜 설정 -->
+						<div class="section-period type-box">
+							<div class="edit-area">
+								<a href="" class="btn-edit">수정</a>
+							</div>
+							<div class="date-area">
+								<strong class="txt-title">시작일</strong>
+								<div class="date-block">
+									<span class="txt-date">12월 31일 (수)</span>
+									<!-- Component : Dropdown -->
+									<!-- [D] 레이어 노출 : aria-expanded=true -->
+									<div class="component-dropdown-time" aria-expanded="false">
+										<span class="txt-label">오전 10:30</span>
+
+										<!-- Layer : Dropdown -->
+										<div class="layer-dropdown">
+											<div class="box-dropdown">
+												<div class="item-option">
+													<input type="radio" id="option01" disabled>
+													<label class="txt-label" for="option01">오전 09:30</label>
+												</div>
+											</div>
+										</div>
+										<!-- //Layer : Dropdown -->
+									</div>
+									<!-- //Component : Dropdown -->
+								</div>
+							</div>
+							<div class="date-area">
+								<strong class="txt-title">종료일</strong>
+								<div class="date-block">
+									<span class="txt-date">12월 31일 (수)</span>
+									<!-- Component : Dropdown -->
+									<!-- [D] 레이어 노출 : aria-expanded=true -->
+									<div class="component-dropdown-time" aria-expanded="false">
+										<span class="txt-label">오전 10:30</span>
+
+										<!-- Layer : Dropdown -->
+										<div class="layer-dropdown">
+											<div class="box-dropdown">
+												<div class="item-option">
+													<input type="radio" id="option01" disabled>
+													<label class="txt-label" for="option01">오전 09:30</label>
+												</div>
+											</div>
+										</div>
+										<!-- //Layer : Dropdown -->
+									</div>
+									<!-- //Component : Dropdown -->
+								</div>
+							</div>
+						</div>
+						<!-- //날짜 설정 -->
+
+						<!-- 대상 설정 -->
+						<div class="section-member type-box">
+							<div class="title-area">
+								<strong class="txt-title">대상</strong>
+								<a href="" class="btn-edit">수정</a>
+							</div>
+
+							<span class="txt-total">1,224명</span>
+						</div>
+						<!-- //대상 설정 -->
+
+						<!-- 전송 -->
+						<div class="section-check type-box">
+							<!-- Component : Checkbox -->
+							<div class="component-checkbox">
+								<input type="checkbox" id="checkbox01">
+								<label class="txt-label" for="checkbox01">
+									<em></em>
+									<span>설문홈의 참여함으로 전송</span>
+								</label>
+							</div>
+							<!-- //Component : Checkbox -->
+						</div>
+						<!-- //전송 -->
+
+						<!-- 배포 -->
+						<div class="section-button">
+							<button type="button" class="btn-primary type-large">배포하기</button>
+						</div>
+						<!-- //배포 -->
+					</div>
+					<!-- //Step 01 -->
+
+					<!-- Step 02 -->
+					<div class="share-step"></div>
+					<!-- //Step 02 -->
+				</div>
+				<!-- //모바일 공유 -->
+
+			</div>
+			<!-- //Page : 설문 공유 -->
+
+		</div>
+		<!-- //Content -->
+
+	</div>
+	<!-- //Wrap -->
+
+</body>
+</html>

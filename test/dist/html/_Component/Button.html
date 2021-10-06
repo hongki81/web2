@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../css/survey.css"/>
+	<title>Survey</title>
+	<style>
+		h1 {
+			font-size: 30px;
+			padding: 30px 0 20px;
+		}
+
+		.float-wrap:after {
+			display: block;
+			clear: both;
+			content: '';
+		}
+
+		.left {
+			float: left;
+			width: 44%;
+		}
+
+		.right {
+			float: right;
+			width: 44%;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div class="float-wrap">
+
+		<!-- 왼쪽 -->
+		<div class="left">
+			<h1>Button</h1>
+			<button type="button" class="btn-default">버튼</button>
+			<button type="button" class="btn-default" disabled>버튼</button>
+
+			<br><br>
+
+			<button type="button" class="btn-primary">버튼</button>
+			<button type="button" class="btn-primary" disabled>버튼</button>
+
+			<h1>Button : 40</h1>
+			<button type="button" class="btn-default type-medium">버튼</button>
+			<button type="button" class="btn-default type-medium type-w">버튼</button>
+			<button type="button" class="btn-default type-medium" disabled>버튼</button>
+
+			<h1>Button : 32</h1>
+			<button type="button" class="btn-default type-small">버튼</button>
+			<button type="button" class="btn-default type-small" disabled>버튼</button>
+
+			<br><br>
+
+			<button type="button" class="btn-primary type-small">버튼</button>
+			<button type="button" class="btn-primary type-small" disabled>버튼</button>
+
+			<br><br>
+
+			<button type="button" class="btn-default type-small type-border">버튼</button>
+
+			<h1>Button : Text</h1>
+			<button type="button" class="btn-text">버튼</button>
+			<button type="button" class="btn-text" disabled>버튼</button>
+		</div>
+		<!-- //왼쪽 -->
+
+		<!-- 오른쪽 -->
+		<div class="right">
+			<h1>Button with Icon</h1>
+			<button type="button" class="btn-primary type-icon type-add">응답 제출</button>
+
+			<button type="button" class="btn-text type-icon-r type-delete">삭제하기</button>
+
+			<button type="button" class="btn-text type-border type-icon type-alarm">다시 알리기</button>
+
+			<h1>Button : Icon Only</h1>
+			<button type="button" class="btn-icon type-required" aria-selected="false" data-tooltip="필수 응답" data-direction="up"><i></i></button>
+			<button type="button" class="btn-icon type-required" aria-selected="true" data-tooltip="필수 응답" data-direction="up"><i></i></button>
+
+			<button type="button" class="btn-icon type-copy" data-tooltip="복사" data-direction="up"><i></i></button>
+			<button type="button" class="btn-icon type-delete" data-tooltip="삭제" data-direction="up"><i></i></button>
+			<button type="button" class="btn-icon type-context" data-tooltip="더보기" data-direction="up"><i></i></button>
+
+			<button type="button" class="btn-icon type-light type-delete"><i></i></button>
+			<button type="button" class="btn-icon type-light type-share"><i></i></button>
+			<button type="button" class="btn-icon type-light type-close"><i></i></button>
+
+			<h1>Button : Icon Only (32*32)</h1>
+			<button type="button" class="btn-icon size-32 type-setting"><i></i></button>
+			<button type="button" class="btn-icon size-32 type-circle type-view"><i></i></button>
+
+			<h1>Button : Icon Only (36*36)</h1>
+			<button type="button" class="btn-icon size-36 type-circle type-add"><i></i></button>
+
+			<h1>Button : Icon Only (48*48)</h1>
+			<button type="button" class="btn-icon size-48 type-circle type-download"><i></i></button>
+
+			<h1>Button : Icon Only (56*56)</h1>
+			<button type="button" class="btn-icon size-56 type-circle type-kakaowork" data-tooltip="카웍 보내기" data-direction="up"><i></i></button>
+			<button type="button" class="btn-icon size-56 type-circle type-email" data-tooltip="메일 보내기" data-direction="up"><i></i></button>
+			<button type="button" class="btn-icon size-56 type-circle type-link" data-tooltip="링크 복사" data-direction="up"><i></i></button>
+
+			<h1>Button : Move to Top</h1>
+			<button type="button" class="btn-move-top"><i></i></button>
+
+			<h1>Button : Survey Create</h1>
+			<button type="button" class="btn-survey-create" data-tooltip="새 설문 만들기" data-direction="up">
+				<span></span>
+			</button>
+
+			<button type="button" class="btn-survey-create" tooltip="새 설문 만들기" direction="up" disabled>
+				<span></span>
+			</button>
+		</div>
+		<!-- //오른쪽 -->
+
+	</div>
+
+</body>
+</html>

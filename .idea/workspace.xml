@@ -2,8 +2,94 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="340e558f-9b82-4ed9-956e-19592bcbeafe" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ajax.html" afterPath="$PROJECT_DIR$/ajax.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dist/fonts/NotoSansCJKkr-Bold.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dist/fonts/NotoSansCJKkr-Bold.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dist/fonts/NotoSansCJKkr-Bold.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dist/fonts/NotoSansCJKkr-Medium.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dist/fonts/NotoSansCJKkr-Medium.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dist/fonts/NotoSansCJKkr-Medium.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dist/fonts/NotoSansCJKkr-Regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dist/fonts/NotoSansCJKkr-Regular.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dist/fonts/NotoSansCJKkr-Regular.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dist/fonts/Roboto-Bold.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dist/fonts/Roboto-Bold.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dist/fonts/Roboto-Bold.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dist/fonts/Roboto-Medium.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dist/fonts/Roboto-Medium.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dist/fonts/Roboto-Medium.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dist/fonts/Roboto-Regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dist/fonts/Roboto-Regular.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dist/fonts/Roboto-Regular.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dist/images/favicon-16.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dist/images/favicon-180.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dist/images/favicon-192.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dist/images/favicon-32.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dist/images/favicon-76.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dist/images/favicon-96.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dist/images/img_default.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dist/images/img_group_default.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dist/images/img_profile_default.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dist/images/img_survey_default.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dist/images/sample_1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dist/images/sample_2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dist/images/survey_sprite.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/script_reference.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/script_reference.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dist/css/survey.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dist/css/survey.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dist/html/@Index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dist/html/Page_Editor/Page_Answer_Component.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dist/html/Page_Editor/Page_Editor.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dist/html/Page_Editor/Page_Editor_Component.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dist/html/Page_Editor/Page_Editor_Release.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dist/html/Page_Editor/Popup_Group_Work.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dist/html/Page_Editor/Popup_Image_Org.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dist/html/Page_Editor/Popup_Preview.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dist/html/Page_Editor/Popup_Setting.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dist/html/Page_Error/Page_Error.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dist/html/Page_Home/Page_Survey_Create.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dist/html/Page_Home/Page_Survey_Create_Nodata.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dist/html/Page_Home/Page_Survey_Participate.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dist/html/Page_Home/Page_Survey_Participate_Nodata.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dist/html/Page_Result/Page_Result_Individual.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dist/html/Page_Result/Page_Result_Nodata.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dist/html/Page_Result/Page_Result_Summary.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dist/html/Page_Share/Page_Share_Date.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dist/html/Page_Share/Page_Share_Date_Mobile.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dist/html/Page_Share/Page_Share_Member.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dist/html/Page_Share/Page_Share_Member_Mobile_1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dist/html/Page_Share/Page_Share_Member_Mobile_2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dist/html/Page_Share/Page_Share_Member_Search.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dist/html/Page_Share/Page_Share_Survey.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dist/html/Page_Survey/Page_Survey.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dist/html/Page_Survey/Page_Survey_Authority.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dist/html/Page_Survey/Page_Survey_Complete.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dist/html/Page_Survey/Page_Survey_End.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dist/html/_CommonUI/Common_UI_Class_Info.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dist/html/_CommonUI/Common_UI_Dept_Info.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dist/html/_CommonUI/Common_UI_Group_Info.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dist/html/_CommonUI/Common_UI_User_Info.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dist/html/_Component/Auto_Complete.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dist/html/_Component/Button.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dist/html/_Component/Checkbox.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dist/html/_Component/Context.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dist/html/_Component/Dropdown.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dist/html/_Component/Icons.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dist/html/_Component/Loader.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dist/html/_Component/Pagination.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dist/html/_Component/Radio.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dist/html/_Component/Tab.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dist/html/_Component/Toast.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dist/html/_Component/Tooltip.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dist/html/_Component/Upload_Image.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dist/html/_LAYER_POPUP/Popup_Confirm.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dist/html/_LAYER_POPUP/Popup_w480.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dist/html/_LAYOUT/LAYOUT.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dist/html/_LAYOUT/LAYOUT_SUB.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dist/html/index.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dist/html/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dist/js/ion.rangeSlider.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/dist/js/ui.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,12 +102,22 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="ajax.html" pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="ajax.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ajax.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="798">
-              <caret line="42" column="50" lean-forward="true" selection-start-line="42" selection-start-column="50" selection-end-line="42" selection-end-column="50" />
+            <state relative-caret-position="652">
+              <caret line="42" column="50" lean-forward="false" selection-start-line="42" selection-start-column="50" selection-end-line="42" selection-end-column="50" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ui.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/dist/js/ui.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -70,10 +166,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="57" />
-    <option name="y" value="23" />
-    <option name="width" value="1623" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-3738" />
+    <option name="y" value="24" />
+    <option name="width" value="1680" />
     <option name="height" value="1027" />
   </component>
   <component name="ProjectView">
@@ -99,6 +195,17 @@
               <item name="web2" type="b2602c69:ProjectViewProjectNode" />
               <item name="web2" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="web2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web2" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="web2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web2" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -113,6 +220,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/test" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -139,30 +247,31 @@
       <option name="presentableId" value="Default" />
       <updated>1612836315850</updated>
       <workItem from="1612836317128" duration="10607000" />
+      <workItem from="1633479355863" duration="40000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10607000" />
+    <option name="totallyTimeSpent" value="10647000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="57" y="23" width="1623" height="1027" extended-state="6" />
+    <frame x="-3738" y="24" width="1680" height="1027" extended-state="0" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18414482" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18384568" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20922747" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20922747" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -177,7 +286,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/script.js">
+    <entry file="file://$PROJECT_DIR$/ajax.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -185,11 +294,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/list">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="19" lean-forward="false" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="7" lean-forward="false" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/javascript">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
           <caret line="2" column="436" lean-forward="false" selection-start-line="2" selection-start-column="436" selection-end-line="2" selection-end-column="436" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -197,7 +328,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="2" column="469" lean-forward="false" selection-start-line="2" selection-start-column="469" selection-end-line="2" selection-end-column="469" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -205,7 +335,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="4" column="4" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -227,8 +356,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ajax.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="798">
-          <caret line="42" column="50" lean-forward="true" selection-start-line="42" selection-start-column="50" selection-end-line="42" selection-end-column="50" />
+        <state relative-caret-position="652">
+          <caret line="42" column="50" lean-forward="false" selection-start-line="42" selection-start-column="50" selection-end-line="42" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/dist/js/ui.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>

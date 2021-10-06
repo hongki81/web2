@@ -1,0 +1,266 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../css/survey.css"/>
+	<title>Survey</title>
+	<style>
+		h1 {
+			font-size: 30px;
+			padding: 30px 0 20px;
+		}
+
+		.float-wrap:after {
+			display: block;
+			clear: both;
+			content: '';
+		}
+
+		.left {
+			float: left;
+			width: 15%;
+		}
+
+		.right {
+			float: right;
+			width: 74%;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div class="float-wrap">
+
+		<!-- 왼쪽 -->
+		<div class="left">
+		</div>
+		<!-- //왼쪽 -->
+
+		<!-- 오른쪽 -->
+		<div class="right">
+			<h1>Dropdown : 유형 선택</h1>
+
+			<!-- Component : Dropdown -->
+			<!-- [D] 레이어 노출 : aria-expanded=true -->
+			<div class="component-dropdown-type" aria-expanded="true">
+				<span class="txt-label">
+					<!--
+						[D] 유형 정의
+						type-a : 객관식
+						type-b : 객관식 + 이미지
+						type-c : 주관식
+						type-d : 선형 배율
+						type-e : 별점
+						type-f : 감정바
+						type-g : 소주제
+					-->
+					<i class="icon-editor type-a"></i>
+				</span>
+
+				<!-- Layer : Dropdown -->
+				<div class="layer-dropdown">
+					<div class="box-dropdown">
+						<!-- Item : Type -->
+						<a href="javascript::" class="item-type">
+							<i class="icon-editor type-a"></i>
+							<span class="txt-type">객관식</span>
+						</a>
+						<!-- //Item : Type -->
+
+						<!-- Item : Type -->
+						<a href="javascript::" class="item-type">
+							<i class="icon-editor type-b"></i>
+							<span class="txt-type">객관식 이미지</span>
+						</a>
+						<!-- //Item : Type -->
+
+						<!-- Item : Type -->
+						<a href="javascript::" class="item-type">
+							<i class="icon-editor type-c"></i>
+							<span class="txt-type">주관식</span>
+						</a>
+						<!-- //Item : Type -->
+
+						<!-- Item : Type -->
+						<a href="javascript::" class="item-type">
+							<i class="icon-editor type-d"></i>
+							<span class="txt-type">선형 배율</span>
+						</a>
+						<!-- //Item : Type -->
+
+						<!-- Item : Type -->
+						<a href="javascript::" class="item-type">
+							<i class="icon-editor type-e"></i>
+							<span class="txt-type">별점</span>
+						</a>
+						<!-- //Item : Type -->
+
+						<!-- Item : Type -->
+						<a href="javascript::" class="item-type">
+							<i class="icon-editor type-f"></i>
+							<span class="txt-type">감정바</span>
+						</a>
+						<!-- //Item : Type -->
+
+						<!-- Item : Type -->
+						<a href="javascript::" class="item-type">
+							<i class="icon-editor type-g"></i>
+							<span class="txt-type">소주제</span>
+						</a>
+						<!-- //Item : Type -->
+					</div>
+				</div>
+				<!-- //Layer : Dropdown -->
+			</div>
+			<!-- //Component : Dropdown -->
+
+			<br><br><br><br>
+			<br><br><br><br>
+			<br><br><br><br>
+			<br><br><br><br>
+
+			<h1>Dropdown : 레벨 선택</h1>
+
+			<!-- Component : Dropdown -->
+			<!-- [D] 레이어 노출 : aria-expanded=true -->
+			<div class="component-dropdown-level" aria-expanded="true">
+				<span class="txt-label">10개 레벨</span>
+
+				<!-- Layer : Dropdown -->
+				<div class="layer-dropdown">
+					<div class="box-dropdown">
+						<!-- Item : Level -->
+						<div class="item-level">
+							<input type="radio" id="level01">
+							<label class="txt-level" for="level01">3개 레벨</label>
+						</div>
+						<!-- //Item : Level -->
+
+						<!-- Item : Level -->
+						<div class="item-level">
+							<input type="radio" id="level02">
+							<label class="txt-level" for="level02">4개 레벨</label>
+						</div>
+						<!-- //Item : Level -->
+
+						<!-- Item : Level -->
+						<div class="item-level">
+							<input type="radio" id="level03">
+							<label class="txt-level" for="level03">5개 레벨</label>
+						</div>
+						<!-- //Item : Level -->
+					</div>
+				</div>
+				<!-- //Layer : Dropdown -->
+			</div>
+			<!-- //Component : Dropdown -->
+
+			<br><br><br><br>
+			<br><br><br><br>
+
+			<h1>Dropdown : 시간 선택</h1>
+
+			<!-- Component : Dropdown -->
+			<!-- [D] 레이어 노출 : aria-expanded=true -->
+			<div class="component-dropdown-time" aria-expanded="true" onclick="moveCurrentTime(this);">
+				<span class="txt-label">오전 10:30</span>
+
+				<!-- Layer : Dropdown -->
+				<div class="layer-dropdown">
+					<div class="box-dropdown">
+						<div class="item-option">
+							<input type="radio" id="time01" disabled>
+							<label class="txt-label" for="time01">오전 09:30</label>
+						</div>
+
+						<div class="item-option">
+							<input type="radio" id="time02">
+							<label class="txt-label" for="time02">오전 10:00</label>
+						</div>
+
+						<div class="item-option">
+							<input type="radio" id="time03">
+							<label class="txt-label" for="time03">오전 10:30</label>
+						</div>
+
+						<div class="item-option" id="currentTime">
+							<input type="radio" id="time04">
+							<label class="txt-label" for="time04">오전 11:00</label>
+						</div>
+
+						<div class="item-option">
+							<input type="radio" id="time03">
+							<label class="txt-label" for="time03">오전 11:30</label>
+						</div>
+
+						<div class="item-option">
+							<input type="radio" id="time02">
+							<label class="txt-label" for="time02">오전 12:00</label>
+						</div>
+
+						<div class="item-option">
+							<input type="radio" id="time03">
+							<label class="txt-label" for="time03">오전 12:30</label>
+						</div>
+
+						<div class="item-option">
+							<input type="radio" id="time02">
+							<label class="txt-label" for="time02">오전 01:00</label>
+						</div>
+
+						<div class="item-option">
+							<input type="radio" id="time03">
+							<label class="txt-label" for="time03">오전 01:30</label>
+						</div>
+					</div>
+				</div>
+				<!-- //Layer : Dropdown -->
+			</div>
+			<!-- //Component : Dropdown -->
+
+			<br><br><br><br>
+			<br><br><br><br>
+			<br><br><br><br>
+
+			<h1>Dropdown</h1>
+
+			<!-- Component : Dropdown -->
+			<!-- [D] 레이어 노출 : aria-expanded=true -->
+			<div class="component-dropdown-time type-large" aria-expanded="true">
+				<span class="txt-label">특정 멤버</span>
+
+				<!-- Layer : Dropdown -->
+				<div class="layer-dropdown">
+					<div class="box-dropdown">
+						<div class="item-option">
+							<input type="radio" id="option02">
+							<label class="txt-label" for="option02">전체</label>
+						</div>
+
+						<div class="item-option">
+							<input type="radio" id="option03">
+							<label class="txt-label" for="option03">특정 멤버</label>
+						</div>
+					</div>
+				</div>
+				<!-- //Layer : Dropdown -->
+			</div>
+			<!-- //Component : Dropdown -->
+		</div>
+		<!-- //오른쪽 -->
+
+	</div>
+
+	<script type="text/javascript">
+        function moveCurrentTime(elem) {
+            var targetChild = elem.querySelector('.box-dropdown');
+            var padding = window.getComputedStyle(targetChild).getPropertyValue('padding-top');
+
+            targetChild.scrollTo(0, (targetChild.querySelector('#currentTime').offsetTop - parseInt(padding)));
+        }
+	</script>
+
+</body>
+</html>

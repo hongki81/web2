@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/litepicker/dist/css/litepicker.css"/>
+	<link rel="stylesheet" href="../../css/survey.css"/>
+	<title>Survey</title>
+</head>
+
+<body>
+
+	<!-- Wrap -->
+	<div class="survey-wrap">
+
+		<!-- GNB -->
+		<div class="layout-gnb">
+			<div class="container-gnb">
+				<div class="section-back">
+					<a href="javascript:;" class="btn-back" aria-label="Back"></a>
+				</div>
+
+				<div class="section-nav">
+					<!-- [D] 메뉴 선택 시 aria-selected=true -->
+					<a href="javascript:;" class="link-nav" aria-selected="false">제작</a>
+					<a href="javascript:;" class="link-nav" aria-selected="true">공유</a>
+					<a href="javascript:;" class="link-nav" aria-selected="false">결과</a>
+				</div>
+
+				<!-- 미리보기, 공동작업 -->
+				<div class="section-sub">
+					<button class="btn-sub">공동작업</button>
+				</div>
+				<!-- //미리보기, 공동작업 -->
+			</div>
+		</div>
+		<!-- //GNB -->
+
+		<!-- Content -->
+		<div class="layout-content">
+
+			<!-- Page : 설문 공유 -->
+			<div class="page-share">
+				<!-- PC 공유 -->
+				<div class="share-desktop">
+					<!-- STEP 01 -->
+					<!-- [D] 해당 스텝 활성화 : aria-selected=true -->
+					<div class="share-step type-01" aria-selected="false">
+						<div class="section-title">
+							<h2 class="txt-title">
+								<em>1</em>설문 기간과 대상
+							</h2>
+							<div class="button-area">
+								<button type="button" class="btn-default type-medium type-w">변경</button>
+							</div>
+						</div>
+
+						<!-- Tab -->
+						<div class="section-tab">
+							<div class="item-tab" aria-selected="false">
+								<div class="tab-area">
+									<span class="txt-title">시작일</span>
+									<div class="date-block">
+										<span class="txt-date">12월 31일 (수)</span>
+										<!-- Component : Dropdown -->
+										<!-- [D] 레이어 노출 : aria-expanded=true -->
+										<div class="component-dropdown-time" aria-expanded="false">
+											<span class="txt-label">오전 10:30</span>
+
+											<!-- Layer : Dropdown -->
+											<div class="layer-dropdown">
+												<div class="box-dropdown">
+													<div class="item-option">
+														<input type="radio" id="option01" disabled>
+														<label class="txt-label" for="option01">오전 09:30</label>
+													</div>
+
+													<div class="item-option">
+														<input type="radio" id="option02">
+														<label class="txt-label" for="option02">오전 10:00</label>
+													</div>
+
+													<div class="item-option">
+														<input type="radio" id="option03">
+														<label class="txt-label" for="option03">오전 10:30</label>
+													</div>
+												</div>
+											</div>
+											<!-- //Layer : Dropdown -->
+										</div>
+										<!-- //Component : Dropdown -->
+									</div>
+								</div>
+
+								<a href="" class="link-tab"></a>
+							</div>
+							<div class="item-tab" aria-selected="false">
+								<div class="tab-area">
+									<span class="txt-title">종료일</span>
+									<div class="date-block">
+										<span class="txt-date">12월 31일 (수)</span>
+										<!-- Component : Dropdown -->
+										<!-- [D] 레이어 노출 : aria-expanded=true -->
+										<div class="component-dropdown-time" aria-expanded="false">
+											<span class="txt-label">오전 10:30</span>
+
+											<!-- Layer : Dropdown -->
+											<div class="layer-dropdown">
+												<div class="box-dropdown">
+													<div class="item-option">
+														<input type="radio" id="option01" disabled>
+														<label class="txt-label" for="option01">오전 09:30</label>
+													</div>
+
+													<div class="item-option">
+														<input type="radio" id="option02">
+														<label class="txt-label" for="option02">오전 10:00</label>
+													</div>
+
+													<div class="item-option">
+														<input type="radio" id="option03">
+														<label class="txt-label" for="option03">오전 10:30</label>
+													</div>
+												</div>
+											</div>
+											<!-- //Layer : Dropdown -->
+										</div>
+										<!-- //Component : Dropdown -->
+									</div>
+								</div>
+
+								<a href="" class="link-tab"></a>
+							</div>
+							<div class="item-tab" aria-selected="false">
+								<div class="tab-area">
+									<span class="txt-title">대상</span>
+									<strong class="txt-member">999명</strong>
+								</div>
+
+								<a href="" class="link-tab"></a>
+							</div>
+						</div>
+						<!-- //Tab -->
+
+						<!-- 기간 선택 -->
+						<div class="section-period">
+							<div id="shareRangeDate"></div>
+						</div>
+						<!-- //기간 선택 -->
+
+						<!-- 대상자 선택 -->
+						<div class="section-member"></div>
+						<!-- //대상자 선택 -->
+
+						<div class="section-release">
+							<div class="check-area">
+								<!-- Component : Checkbox -->
+								<div class="component-checkbox">
+									<input type="checkbox" id="checkbox01">
+									<label class="txt-label" for="checkbox01">
+										<em></em>
+										<span>설문홈의 참여함으로 전송</span>
+									</label>
+								</div>
+								<!-- //Component : Checkbox -->
+
+								<div class="help-block">
+									<span class="txt-help">참여함에 설문을 보내지 않아도 링크를 통한 응답은 가능합니다.</span>
+								</div>
+							</div>
+							<div class="button-area">
+								<button type="button" class="btn-primary">배포하기</button>
+							</div>
+						</div>
+					</div>
+					<!-- //STEP 01 -->
+
+					<!-- STEP 02 -->
+					<!-- [D] 해당 스텝 활성화 : aria-selected=true -->
+					<div class="share-step type-02" aria-selected="true">
+						<div class="section-title">
+							<h2 class="txt-title">
+								<em>2</em>설문 공유
+							</h2>
+						</div>
+
+						<!-- 설문 공유 -->
+						<div class="section-share">
+							<div class="share-area">
+								<strong class="txt-release">
+									제목없는 설문의 배포가 완료되었습니다.
+								</strong>
+								<span class="txt-desc">
+									응답자들은 이 설문을 설문 홈에서 확인할 수 있습니다.
+								</span>
+							</div>
+							<div class="copy-area">
+								<div class="link-block">
+									<span class="txt-link">https://www.figma.com/file/NPZ9E1GT0jc9nWYMdAn7Gr/Kakaowork-Survey</span>
+								</div>
+								<div class="button-block">
+									<a href="" class="link-copy">링크 복사</a>
+								</div>
+							</div>
+							<div class="button-area">
+								<button type="button" class="btn-icon size-56 type-circle type-kakaowork" data-tooltip="카웍 보내기" data-direction="up"><i></i></button>
+								<button type="button" class="btn-icon size-56 type-circle type-email" data-tooltip="메일 보내기" data-direction="up" disabled><i></i></button>
+							</div>
+						</div>
+						<!-- //설문 공유 -->
+
+						<div class="section-button">
+							<button type="button" class="btn-primary">홈으로 가기</button>
+						</div>
+					</div>
+					<!-- //STEP 02 -->
+				</div>
+				<!-- //PC 공유 -->
+
+				<!-- 모바일 공유 -->
+				<div class="share-mobile">
+					<!-- Title -->
+					<div class="section-title">
+						<h2 class="txt-title">설문 기간과 대상</h2>
+						<div class="step-area">
+							<span class="txt-step" aria-selected="false">1</span>
+							<span class="txt-step" aria-selected="true">2</span>
+						</div>
+					</div>
+					<!-- //Title -->
+
+					<!-- Step 01 -->
+					<div class="share-step"></div>
+					<!-- //Step 01 -->
+
+					<!-- Step 02 -->
+					<div class="share-step">
+						<!-- 배포 문구 -->
+						<div class="section-msg">
+							<div class="msg-area">
+								<strong class="txt-release">
+									제목없는 설문의 배포가 완료되었습니다.
+								</strong>
+								<span class="txt-desc">
+									응답자들은 이 설문을 설문 홈에서 확인할 수 있습니다.
+								</span>
+							</div>
+						</div>
+						<!-- 배포 문구 -->
+
+						<!-- 링크 공유 -->
+						<div class="section-share">
+							<div class="item-button">
+								<button type="button" class="btn-icon size-56 type-circle type-link"><i></i></button>
+								<span class="txt-label">링크 복사</span>
+							</div>
+							<div class="item-button">
+								<button type="button" class="btn-icon size-56 type-circle type-kakaowork"><i></i></button>
+								<span class="txt-label">카카오워크</span>
+							</div>
+							<div class="item-button">
+								<button type="button" class="btn-icon size-56 type-circle type-email" disabled><i></i></button>
+								<span class="txt-label">이메일</span>
+							</div>
+						</div>
+						<!-- //링크 공유 -->
+
+						<!-- 변경 -->
+						<div class="section-button">
+							<button type="button" class="btn-default type-large type-w">변경</button>
+							<button type="button" class="btn-primary type-large">홈으로 가기</button>
+						</div>
+						<!-- //변경 -->
+					</div>
+					<!-- //Step 02 -->
+				</div>
+				<!-- //모바일 공유 -->
+
+				<!-- Toast -->
+				<div class="toast-block">
+					<!-- Component : Toast -->
+					<!-- [D] Toast 노출 시 : is-show 클래스 추가 -->
+					<div class="component-toast is-show">
+						<div class="box-toast">
+							<a href="javascript:;" class="btn-close" aria-label="Close"></a>
+							<span class="txt-toast">
+								링크를 복사했습니다.
+							</span>
+						</div>
+					</div>
+					<!-- //Component : Toast -->
+				</div>
+				<!-- //Toast -->
+
+			</div>
+			<!-- //Page : 설문 공유 -->
+
+		</div>
+		<!-- //Content -->
+
+	</div>
+	<!-- //Wrap -->
+
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/litepicker/dist/litepicker.js"></script>
+	<script type="text/javascript">
+        new Litepicker({
+            element: document.getElementById('shareRangeDate'),
+            singleMode: false,
+            numberOfColumns: 2,
+            numberOfMonths: 2,
+			inlineMode: true,
+            tooltipText: {
+                one: 'day',
+                other: 'days'
+            },
+            tooltipNumber: (totalDays) => {
+				return totalDays - 1;
+			}
+        });
+	</script>
+
+</body>
+</html>

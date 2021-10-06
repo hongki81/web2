@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../css/survey.css"/>
+	<title>Survey</title>
+	<style>
+		h1 {
+			font-size: 30px;
+			padding: 30px 0 20px;
+		}
+
+		.float-wrap:after {
+			display: block;
+			clear: both;
+			content: '';
+		}
+
+		.left {
+			float: left;
+			width: 44%;
+		}
+
+		.right {
+			float: right;
+			width: 44%;
+		}
+	</style>
+</head>
+
+<body>
+
+<div class="float-wrap">
+	<div class="left">
+		<h1>Tooltip</h1>
+
+		<div style="padding:30px;text-align:center;">
+			<span data-tooltip="tooltip Bottom">Tooltip Hover</span>
+		</div>
+
+		<h1>Tooltip : Up</h1>
+
+		<div style="padding:30px;text-align:center;">
+			<span data-tooltip="tooltip Top" data-direction="up">Tooltip Hover</span>
+		</div>
+
+		<h1>Tooltip : Left</h1>
+
+		<div style="padding:30px;text-align:center;">
+			<span data-tooltip="tooltip Left" data-direction="left">Tooltip Hover</span>
+		</div>
+
+		<h1>Tooltip : Right</h1>
+
+		<div style="padding:30px;text-align:center;">
+			<span data-tooltip="tooltip Right" data-direction="right">Tooltip Hover</span>
+		</div>
+	</div>
+
+	<div class="right">
+		<h1>Tooltip : Align Left</h1>
+
+		<div style="padding:30px;text-align:center;">
+			<span data-tooltip="tooltip Align Left" data-tooltip-align="left">Tooltip Hover</span>
+		</div>
+
+		<h1>Tooltip : Align Right</h1>
+
+		<div style="padding:30px;text-align:center;">
+			<span data-tooltip="tooltip Align Right" data-direction="up" data-tooltip-align="right">Tooltip Hover</span>
+		</div>
+
+		<h1>Tooltip : Word Wrap</h1>
+
+		<div style="padding:30px;text-align:center;">
+			<span data-tooltip="tooltip Align Right tooltip Align Right tooltip Align Right" data-direction="up" tooltip-type="wrap">Tooltip Hover</span>
+		</div>
+
+	</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/litepicker/dist/css/litepicker.css"/>
+	<link rel="stylesheet" href="../../css/survey.css"/>
+	<title>Survey</title>
+</head>
+
+<body>
+
+	<!-- Wrap -->
+	<div class="survey-wrap">
+
+		<!-- GNB -->
+		<div class="layout-gnb">
+			<div class="container-gnb">
+				<div class="section-back">
+					<a href="javascript:;" class="btn-back" aria-label="Back"></a>
+				</div>
+
+				<div class="section-nav">
+					<!-- [D] 메뉴 선택 시 aria-selected=true -->
+					<a href="javascript:;" class="link-nav" aria-selected="false">제작</a>
+					<a href="javascript:;" class="link-nav" aria-selected="true">공유</a>
+					<a href="javascript:;" class="link-nav" aria-selected="false">결과</a>
+				</div>
+
+				<!-- 미리보기, 공동작업 -->
+				<div class="section-sub">
+					<button class="btn-sub">공동작업</button>
+				</div>
+				<!-- //미리보기, 공동작업 -->
+			</div>
+		</div>
+		<!-- //GNB -->
+
+		<!-- Content -->
+		<div class="layout-content">
+
+			<!-- Page : 설문 공유 -->
+			<div class="page-share">
+				<!-- 설문기간 off -->
+				<div class="layer-release" style="display:none;">
+					<div class="box-layer">
+						<span class="txt-desc">설문 기간과 대상을 변경해도 이미 수집한 응답은 유지됩니다.</span>
+					</div>
+					<a href="javascript:;" class="btn-close" aria-label="Close"></a>
+				</div>
+				<!-- //설문기간 off -->
+
+				<!-- PC 공유 -->
+				<div class="share-desktop">
+				</div>
+				<!-- //PC 공유 -->
+
+				<!-- 모바일 공유 -->
+				<div class="share-mobile">
+				</div>
+				<!-- //모바일 공유 -->
+
+				<!-- Layer : 모바일 기간 선택 -->
+				<div class="layer-set-share">
+					<div class="section-title">
+						<button type="button" class="btn-close"></button>
+						<h2 class="txt-title">설문 대상</h2>
+					</div>
+					<div class="section-content">
+						<div class="popup-calendar">
+							<div class="period-area">
+								<span class="txt-period">12월 31일 (수) ~ 12월 31일 (수)</span>
+							</div>
+
+							<div class="week-header-area">
+								<span class="txt-week">일</span>
+								<span class="txt-week">월</span>
+								<span class="txt-week">화</span>
+								<span class="txt-week">수</span>
+								<span class="txt-week">목</span>
+								<span class="txt-week">금</span>
+								<span class="txt-week">토</span>
+							</div>
+
+							<div class="calendar-area">
+								<div class="calendar-block">
+									<!-- 캘린더 영역 -->
+									<!-- //캘린더 영역 -->
+								</div>
+							</div>
+
+							<div class="button-area">
+								<div class="left-block">
+									<button type="button" class="btn-reset">선택 초기화</button>
+								</div>
+								<div class="right-block">
+									<button type="button" class="btn-primary type-large">저장</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //Layer : 모바일 기간 선택 -->
+
+			</div>
+			<!-- //Page : 설문 공유 -->
+
+		</div>
+		<!-- //Content -->
+
+	</div>
+	<!-- //Wrap -->
+
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/litepicker/dist/litepicker.js"></script>
+	<script type="text/javascript">
+        new Litepicker({
+            element: document.getElementById('shareRangeDateMobile'),
+            singleMode: false,
+            numberOfColumns: 1,
+            numberOfMonths: 60,
+            inlineMode: true
+        });
+	</script>
+
+</body>
+</html>

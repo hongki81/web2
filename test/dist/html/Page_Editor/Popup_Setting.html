@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+	<link rel="stylesheet" href="../../css/survey.css"/>
+	<title>Survey</title>
+</head>
+
+<body>
+
+	<!-- Wrap : Popup -->
+	<div class="popup-wrap">
+
+		<div class="layout-popup">
+			<div class="popup-w480">
+				<h2 class="txt-title">설정</h2>
+
+				<!-- 설문 설정 -->
+				<div class="section-popup-setting">
+
+					<!-- Item : 설정 -->
+					<div class="item-setting">
+						<div class="setting-area">
+							<strong class="txt-label">익명으로 응답 받기</strong>
+							<span class="txt-desc">응답자가 익명으로 설문에 참여해요.</span>
+						</div>
+						<div class="check-area">
+							<!-- Component : Toggle -->
+							<div class="component-toggle">
+								<input type="checkbox" id="toggle01">
+								<label class="txt-label" for="toggle01">
+							</div>
+							<!-- //Component : Toggle -->
+						</div>
+					</div>
+					<!-- //Item : 설정 -->
+
+					<!-- Item : 설정 -->
+					<div class="item-setting">
+						<div class="setting-area">
+							<strong class="txt-label">중복 응답 받기</strong>
+							<span class="txt-desc">응답자가 중복 응답을 제출할 수 있어요.</span>
+						</div>
+						<div class="check-area">
+							<!-- Component : Toggle -->
+							<div class="component-toggle">
+								<input type="checkbox" id="toggle02">
+								<label class="txt-label" for="toggle02">
+							</div>
+							<!-- //Component : Toggle -->
+						</div>
+					</div>
+					<!-- //Item : 설정 -->
+
+					<!-- Item : 설정 -->
+					<div class="item-setting">
+						<div class="setting-area">
+							<strong class="txt-label">응답 수정</strong>
+							<span class="txt-desc">응답자가 설문 마감 기한 전까지 응답을 수정할 수 있어요.</span>
+							<span class="txt-desc type-caution">중복 응답과 응답 수정은 동시에 허용할 수 없습니다.</span>
+						</div>
+						<div class="check-area">
+							<!-- Component : Toggle -->
+							<div class="component-toggle">
+								<input type="checkbox" id="toggle03">
+								<label class="txt-label" for="toggle03">
+							</div>
+							<!-- //Component : Toggle -->
+						</div>
+					</div>
+					<!-- //Item : 설정 -->
+
+				</div>
+				<!-- //설문 설정 -->
+
+				<div class="section-button">
+					<button type="button" class="btn-default">취소</button>
+					<button type="button" class="btn-primary">저장</button>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<!-- //Wrap : Popup -->
+
+</body>
+</html>

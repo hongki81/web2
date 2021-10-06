@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../css/survey.css"/>
+	<title>Survey</title>
+	<style>
+		h1 {
+			font-size: 30px;
+			padding: 30px 0 20px;
+		}
+
+		.float-wrap:after {
+			display: block;
+			clear: both;
+			content: '';
+		}
+
+		.left {
+			float: left;
+			width: 44%;
+		}
+
+		.right {
+			float: right;
+			width: 44%;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div class="float-wrap">
+
+		<!-- 왼쪽 -->
+		<div class="left">
+			<h1>Checkbox</h1>
+
+			<!-- Component : Radio -->
+			<div class="component-radio">
+				<input type="radio" id="radio01">
+				<label class="txt-label" for="radio01">
+					<em></em>
+					<span>Radio</span>
+				</label>
+			</div>
+			<!-- //Component : Radio -->
+
+			<!-- Component : Radio -->
+			<div class="component-radio">
+				<input type="radio" id="radio99" disabled>
+				<label class="txt-label" for="radio99">
+					<em></em>
+					<span>Radio</span>
+				</label>
+			</div>
+			<!-- //Component : Radio -->
+		</div>
+		<!-- //왼쪽 -->
+
+		<!-- 오른쪽 -->
+		<div class="right">
+		</div>
+		<!-- //오른쪽 -->
+
+	</div>
+
+</body>
+</html>

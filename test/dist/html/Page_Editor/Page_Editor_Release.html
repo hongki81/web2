@@ -1,0 +1,1860 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../css/survey.css"/>
+	<title>Survey</title>
+</head>
+
+<body>
+
+	<!-- Wrap -->
+	<div class="survey-wrap">
+
+		<!-- GNB -->
+		<div class="layout-gnb">
+			<div class="container-gnb">
+				<div class="section-back">
+					<a href="javascript:;" class="btn-back" aria-label="Back"></a>
+				</div>
+
+				<div class="section-nav">
+					<!-- [D] 메뉴 선택 시 aria-selected=true -->
+					<a href="javascript:;" class="link-nav" aria-selected="true">제작</a>
+					<a href="javascript:;" class="link-nav" aria-selected="false">공유</a>
+					<a href="javascript:;" class="link-nav" aria-selected="false">결과</a>
+				</div>
+
+				<!-- 미리보기, 공동작업 -->
+				<div class="section-sub">
+					<button class="btn-sub">공동작업</button>
+					<button class="btn-preview" aria-label="미리보기"></button>
+				</div>
+				<!-- //미리보기, 공동작업 -->
+			</div>
+		</div>
+		<!-- //GNB -->
+
+		<!-- Content -->
+		<div class="layout-content">
+
+			<!-- Page : Editor (설문 제작) -->
+			<!-- [D] 배포된 설문 : type-release 클래스 추가 -->
+			<div class="page-editor type-release">
+
+				<!-- 배포된 설문 안내 배너 -->
+				<div class="flex-banner">
+					<div class="layer-release">
+						<div class="box-layer">
+							<span class="txt-desc">응답 수집이 시작된 설문은 수정할 수 없습니다. 수정이 필요할 경우, 현재 설문을 복사하여 새로 진행하시길 권장합니다.</span>
+							<a href="javascript:;" class="link-copy">설문 복사</a>
+						</div>
+						<a href="javascript:;" class="btn-close" aria-label="Close"></a>
+					</div>
+				</div>
+				<!-- //배포된 설문 안내 배너 -->
+
+				<div class="flex-content">
+					<div class="pos-content split">
+						<!-- 제작 -->
+						<div class="container-editor">
+
+							<div class="flex-editor">
+								<div class="section-editor">
+									<div class="flex-scroll">
+
+										<div class="editor-cover">
+											<!-- 설문 : 제목 -->
+											<div class="item-survey-editor type-subject">
+												<div class="form-survey-subject">
+													<div class="flex-auto">
+														<input type="text" class="input-title" placeholder="제목없는 설문">
+
+														<div class="component-textarea type-none">
+															<textarea class="textarea-desc" placeholder="설문지의 설명을 입력해주세요."></textarea>
+														</div>
+													</div>
+													<div class="flex-fix">
+														<!-- Component : Upload Image -->
+														<!-- [D] 이미지 업로드 완료 : is-complete 클래스 추가 -->
+														<div class="component-upload-img">
+															<div class="upload-default" tooltip="직접 선택" direction="up">
+																<input type="file" id="upload01">
+																<label class="default-img" for="upload01">
+																	<i></i>
+																	<span></span>
+																</label>
+															</div>
+
+															<div class="upload-img">
+																<div class="preview-img">
+																	<img src="../../images/img_survey_default.png">
+
+																	<div class="edit-img" tooltip="이미지 변경" direction="up">
+																		<label class="txt-label" for="upload01"></label>
+																	</div>
+																</div>
+															</div>
+															<div class="upload-btn">
+																<button type="button" class="btn-delete" aria-label="Delete"></button>
+															</div>
+														</div>
+														<!-- //Component : Upload Image -->
+													</div>
+												</div>
+
+												<!-- 설문 유형 추가 -->
+												<div class="survey-type" aria-expanded="false">
+													<button type="button" class="btn-icon size-36 type-circle type-add" aria-label="유형 추가"><i></i></button>
+
+													<!-- Layer : 유형 추가 -->
+													<div class="layer-survey-type">
+														<!-- Item : Type -->
+														<a href="javascript:;" class="item-type">
+															<i class="icon-editor type-a"></i>
+															<span class="txt-type">객관식</span>
+														</a>
+														<!-- //Item : Type -->
+
+														<!-- Item : Type -->
+														<a href="javascript:;" class="item-type">
+															<i class="icon-editor type-b"></i>
+															<span class="txt-type">객관식 이미지</span>
+														</a>
+														<!-- //Item : Type -->
+
+														<!-- Item : Type -->
+														<a href="javascript:;" class="item-type">
+															<i class="icon-editor type-c"></i>
+															<span class="txt-type">주관식</span>
+														</a>
+														<!-- //Item : Type -->
+
+														<!-- Item : Type -->
+														<a href="javascript:;" class="item-type">
+															<i class="icon-editor type-d"></i>
+															<span class="txt-type">선형 배율</span>
+														</a>
+														<!-- //Item : Type -->
+
+														<!-- Item : Type -->
+														<a href="javascript:;" class="item-type">
+															<i class="icon-editor type-e"></i>
+															<span class="txt-type">별점</span>
+														</a>
+														<!-- //Item : Type -->
+
+														<!-- Item : Type -->
+														<a href="javascript:;" class="item-type">
+															<i class="icon-editor type-f"></i>
+															<span class="txt-type">감정바</span>
+														</a>
+														<!-- //Item : Type -->
+
+														<!-- Item : Type -->
+														<a href="javascript:;" class="item-type">
+															<i class="icon-editor type-g"></i>
+															<span class="txt-type">소주제</span>
+														</a>
+														<!-- //Item : Type -->
+													</div>
+													<!-- //Layer : 유형 추가 -->
+												</div>
+												<!-- //설문 유형 추가 -->
+											</div>
+											<!-- //설문 : 제목 -->
+
+											<!-- 유형 별 설문 (드래그&드롭 영역) -->
+											<div class="drag-area">
+												<!-- 설문 : 객관식 -->
+												<div class="item-survey-editor type-drag">
+													<div class="form-survey-question">
+														<div class="flex-type">
+															<i class="icon-drag"></i>
+															<!-- Component : Dropdown -->
+															<!-- [D] 레이어 노출 : aria-expanded=true -->
+															<div class="component-dropdown-type" aria-expanded="false">
+															<span class="txt-label">
+																<!--
+																	[D] 유형 정의
+																	type-a : 객관식
+																	type-b : 객관식 + 이미지
+																	type-c : 주관식
+																	type-d : 선형 배율
+																	type-e : 별점
+																	type-f : 감정바
+																	type-g : 소주제
+																-->
+																<i class="icon-editor type-a"></i>
+															</span>
+
+																<!-- Layer : Dropdown -->
+																<div class="layer-dropdown">
+																	<div class="box-dropdown">
+																		<!-- Item : Type -->
+																		<a href="javascript:;" class="item-type">
+																			<i class="icon-editor type-a"></i>
+																			<span class="txt-type">객관식</span>
+																		</a>
+																		<!-- //Item : Type -->
+
+																		<!-- Item : Type -->
+																		<a href="javascript:;" class="item-type">
+																			<i class="icon-editor type-b"></i>
+																			<span class="txt-type">객관식 이미지</span>
+																		</a>
+																		<!-- //Item : Type -->
+
+																		<!-- Item : Type -->
+																		<a href="javascript:;" class="item-type">
+																			<i class="icon-editor type-c"></i>
+																			<span class="txt-type">주관식</span>
+																		</a>
+																		<!-- //Item : Type -->
+
+																		<!-- Item : Type -->
+																		<a href="javascript:;" class="item-type">
+																			<i class="icon-editor type-d"></i>
+																			<span class="txt-type">선형 배율</span>
+																		</a>
+																		<!-- //Item : Type -->
+
+																		<!-- Item : Type -->
+																		<a href="javascript:;" class="item-type">
+																			<i class="icon-editor type-e"></i>
+																			<span class="txt-type">별점</span>
+																		</a>
+																		<!-- //Item : Type -->
+
+																		<!-- Item : Type -->
+																		<a href="javascript:;" class="item-type">
+																			<i class="icon-editor type-f"></i>
+																			<span class="txt-type">감정바</span>
+																		</a>
+																		<!-- //Item : Type -->
+
+																		<!-- Item : Type -->
+																		<a href="javascript:;" class="item-type">
+																			<i class="icon-editor type-g"></i>
+																			<span class="txt-type">소주제</span>
+																		</a>
+																		<!-- //Item : Type -->
+																	</div>
+																</div>
+																<!-- //Layer : Dropdown -->
+															</div>
+															<!-- //Component : Dropdown -->
+														</div>
+														<div class="flex-num">
+															<span class="txt-num">1</span>
+														</div>
+														<div class="flex-input">
+															<input type="text" class="input-question" placeholder="질문을 입력해주세요.">
+														</div>
+														<div class="flex-button">
+															<!-- [D] 필수 선택 : aria-selected=true -->
+															<button type="button" class="btn-icon type-required" aria-selected="false" tooltip="필수 응답" direction="up"><i></i></button>
+
+															<button type="button" class="btn-icon type-copy" tooltip="복사" direction="up"><i></i></button>
+															<button type="button" class="btn-icon type-delete" tooltip="삭제" direction="up"><i></i></button>
+															<button type="button" class="btn-icon type-context" tooltip="더보기" direction="up"><i></i></button>
+														</div>
+													</div>
+
+													<!-- 객관식 -->
+													<div class="form-survey-objective">
+														<!-- 보기 -->
+														<div class="objective-item">
+															<div class="flex-symbol">
+																<span class="txt-symbol">-</span>
+															</div>
+															<div class="flex-input">
+																<input type="text" class="input-answer" placeholder="응답 옵션">
+															</div>
+														</div>
+														<!-- //보기 -->
+
+														<!-- 보기 -->
+														<div class="objective-item">
+															<div class="flex-symbol">
+																<span class="txt-symbol">-</span>
+															</div>
+															<div class="flex-input">
+																<input type="text" class="input-answer" placeholder="응답 옵션">
+															</div>
+														</div>
+														<!-- //보기 -->
+													</div>
+													<!-- //객관식 -->
+
+													<!-- 설문 유형 추가 -->
+													<div class="survey-type" aria-expanded="false">
+														<button type="button" class="btn-icon size-36 type-circle type-add" aria-label="유형 추가"><i></i></button>
+
+														<!-- Layer : 유형 추가 -->
+														<div class="layer-survey-type">
+															<!-- Item : Type -->
+															<a href="javascript:;" class="item-type">
+																<i class="icon-editor type-a"></i>
+																<span class="txt-type">객관식</span>
+															</a>
+															<!-- //Item : Type -->
+
+															<!-- Item : Type -->
+															<a href="javascript:;" class="item-type">
+																<i class="icon-editor type-b"></i>
+																<span class="txt-type">객관식 이미지</span>
+															</a>
+															<!-- //Item : Type -->
+
+															<!-- Item : Type -->
+															<a href="javascript:;" class="item-type">
+																<i class="icon-editor type-c"></i>
+																<span class="txt-type">주관식</span>
+															</a>
+															<!-- //Item : Type -->
+
+															<!-- Item : Type -->
+															<a href="javascript:;" class="item-type">
+																<i class="icon-editor type-d"></i>
+																<span class="txt-type">선형 배율</span>
+															</a>
+															<!-- //Item : Type -->
+
+															<!-- Item : Type -->
+															<a href="javascript:;" class="item-type">
+																<i class="icon-editor type-e"></i>
+																<span class="txt-type">별점</span>
+															</a>
+															<!-- //Item : Type -->
+
+															<!-- Item : Type -->
+															<a href="javascript:;" class="item-type">
+																<i class="icon-editor type-f"></i>
+																<span class="txt-type">감정바</span>
+															</a>
+															<!-- //Item : Type -->
+
+															<!-- Item : Type -->
+															<a href="javascript:;" class="item-type">
+																<i class="icon-editor type-g"></i>
+																<span class="txt-type">소주제</span>
+															</a>
+															<!-- //Item : Type -->
+														</div>
+														<!-- //Layer : 유형 추가 -->
+													</div>
+													<!-- //설문 유형 추가 -->
+												</div>
+												<!-- //설문 : 객관식 -->
+
+												<!-- 설문 : 객관식 + 이미지 -->
+												<div class="item-survey-editor type-drag">
+													<div class="form-survey-question">
+														<div class="flex-type">
+															<i class="icon-drag"></i>
+															<!-- Component : Dropdown -->
+															<!-- [D] 레이어 노출 : aria-expanded=true -->
+															<div class="component-dropdown-type" aria-expanded="false">
+															<span class="txt-label">
+																<!--
+																	[D] 유형 정의
+																	type-a : 객관식
+																	type-b : 객관식 + 이미지
+																	type-c : 주관식
+																	type-d : 선형 배율
+																	type-e : 별점
+																	type-f : 감정바
+																	type-g : 소주제
+																-->
+																<i class="icon-editor type-b"></i>
+															</span>
+
+																<!-- Layer : Dropdown -->
+																<div class="layer-dropdown">
+																	<div class="box-dropdown">
+																		<!-- Item : Type -->
+																		<a href="javascript:;" class="item-type">
+																			<i class="icon-editor type-a"></i>
+																			<span class="txt-type">객관식</span>
+																		</a>
+																		<!-- //Item : Type -->
+
+																		<!-- Item : Type -->
+																		<a href="javascript:;" class="item-type">
+																			<i class="icon-editor type-b"></i>
+																			<span class="txt-type">객관식 이미지</span>
+																		</a>
+																		<!-- //Item : Type -->
+
+																		<!-- Item : Type -->
+																		<a href="javascript:;" class="item-type">
+																			<i class="icon-editor type-c"></i>
+																			<span class="txt-type">주관식</span>
+																		</a>
+																		<!-- //Item : Type -->
+
+																		<!-- Item : Type -->
+																		<a href="javascript:;" class="item-type">
+																			<i class="icon-editor type-d"></i>
+																			<span class="txt-type">선형 배율</span>
+																		</a>
+																		<!-- //Item : Type -->
+
+																		<!-- Item : Type -->
+																		<a href="javascript:;" class="item-type">
+																			<i class="icon-editor type-e"></i>
+																			<span class="txt-type">별점</span>
+																		</a>
+																		<!-- //Item : Type -->
+
+																		<!-- Item : Type -->
+																		<a href="javascript:;" class="item-type">
+																			<i class="icon-editor type-f"></i>
+																			<span class="txt-type">감정바</span>
+																		</a>
+																		<!-- //Item : Type -->
+
+																		<!-- Item : Type -->
+																		<a href="javascript:;" class="item-type">
+																			<i class="icon-editor type-g"></i>
+																			<span class="txt-type">소주제</span>
+																		</a>
+																		<!-- //Item : Type -->
+																	</div>
+																</div>
+																<!-- //Layer : Dropdown -->
+															</div>
+															<!-- //Component : Dropdown -->
+														</div>
+														<div class="flex-num">
+															<span class="txt-num">2</span>
+														</div>
+														<div class="flex-input">
+															<input type="text" class="input-question" placeholder="질문을 입력해주세요.">
+														</div>
+														<div class="flex-button">
+															<!-- [D] 필수 선택 : aria-selected=true -->
+															<button type="button" class="btn-icon type-required" aria-selected="false" tooltip="필수 응답" direction="up"><i></i></button>
+
+															<button type="button" class="btn-icon type-copy" tooltip="복사" direction="up"><i></i></button>
+															<button type="button" class="btn-icon type-delete" tooltip="삭제" direction="up"><i></i></button>
+															<button type="button" class="btn-icon type-context" tooltip="더보기" direction="up"><i></i></button>
+														</div>
+													</div>
+
+													<!-- 객관식 -->
+													<div class="form-survey-objective">
+														<!-- 보기 -->
+														<div class="objective-item">
+															<div class="flex-symbol">
+																<span class="txt-symbol">-</span>
+															</div>
+															<div class="flex-input">
+																<input type="text" class="input-answer" placeholder="응답 옵션">
+															</div>
+															<div class="flex-image">
+																<!-- Component : Upload Image -->
+																<!-- [D] 이미지 업로드 완료 : is-complete 클래스 추가 -->
+																<div class="component-upload-img type-small">
+																	<div class="upload-default" tooltip="직접 선택" direction="up">
+																		<input type="file" id="upload03">
+																		<label class="default-img" for="upload03">
+																			<i></i>
+																			<span></span>
+																		</label>
+																	</div>
+
+																	<div class="upload-img">
+																		<div class="preview-img">
+																			<img src="../../images/img_survey_default.png">
+
+																			<div class="edit-img" tooltip="이미지 변경" direction="up">
+																				<label class="txt-label" for="upload03"></label>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="upload-btn">
+																		<button type="button" class="btn-delete" aria-label="Delete"></button>
+																	</div>
+																</div>
+																<!-- //Component : Upload Image -->
+															</div>
+														</div>
+														<!-- //보기 -->
+
+														<!-- 보기 -->
+														<div class="objective-item">
+															<div class="flex-symbol">
+																<span class="txt-symbol">-</span>
+															</div>
+															<div class="flex-input">
+																<input type="text" class="input-answer" placeholder="응답 옵션">
+															</div>
+															<div class="flex-image">
+																<!-- Component : Upload Image -->
+																<!-- [D] 이미지 업로드 완료 : is-complete 클래스 추가 -->
+																<div class="component-upload-img type-small is-complete">
+																	<div class="upload-default" tooltip="직접 선택" direction="up">
+																		<input type="file" id="upload04">
+																		<label class="default-img" for="upload04">
+																			<i></i>
+																			<span></span>
+																		</label>
+																	</div>
+
+																	<div class="upload-img">
+																		<div class="preview-img">
+																			<img src="../../images/img_survey_default.png">
+
+																			<div class="edit-img" tooltip="이미지 변경" direction="up">
+																				<label class="txt-label" for="upload04"></label>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="upload-btn">
+																		<button type="button" class="btn-delete" aria-label="Delete"></button>
+																	</div>
+																</div>
+																<!-- //Component : Upload Image -->
+															</div>
+														</div>
+														<!-- //보기 -->
+													</div>
+													<!-- //객관식 -->
+
+													<!-- 설문 유형 추가 -->
+													<div class="survey-type" aria-expanded="false">
+														<button type="button" class="btn-icon size-36 type-circle type-add" aria-label="유형 추가"><i></i></button>
+
+														<!-- Layer : 유형 추가 -->
+														<div class="layer-survey-type">
+															<!-- Item : Type -->
+															<a href="javascript:;" class="item-type">
+																<i class="icon-editor type-a"></i>
+																<span class="txt-type">객관식</span>
+															</a>
+															<!-- //Item : Type -->
+
+															<!-- Item : Type -->
+															<a href="javascript:;" class="item-type">
+																<i class="icon-editor type-b"></i>
+																<span class="txt-type">객관식 이미지</span>
+															</a>
+															<!-- //Item : Type -->
+
+															<!-- Item : Type -->
+															<a href="javascript:;" class="item-type">
+																<i class="icon-editor type-c"></i>
+																<span class="txt-type">주관식</span>
+															</a>
+															<!-- //Item : Type -->
+
+															<!-- Item : Type -->
+															<a href="javascript:;" class="item-type">
+																<i class="icon-editor type-d"></i>
+																<span class="txt-type">선형 배율</span>
+															</a>
+															<!-- //Item : Type -->
+
+															<!-- Item : Type -->
+															<a href="javascript:;" class="item-type">
+																<i class="icon-editor type-e"></i>
+																<span class="txt-type">별점</span>
+															</a>
+															<!-- //Item : Type -->
+
+															<!-- Item : Type -->
+															<a href="javascript:;" class="item-type">
+																<i class="icon-editor type-f"></i>
+																<span class="txt-type">감정바</span>
+															</a>
+															<!-- //Item : Type -->
+
+															<!-- Item : Type -->
+															<a href="javascript:;" class="item-type">
+																<i class="icon-editor type-g"></i>
+																<span class="txt-type">소주제</span>
+															</a>
+															<!-- //Item : Type -->
+														</div>
+														<!-- //Layer : 유형 추가 -->
+													</div>
+													<!-- //설문 유형 추가 -->
+												</div>
+												<!-- //설문 : 객관식 + 이미지 -->
+
+												<!-- 설문 : 주관식 -->
+												<div class="item-survey-editor type-drag">
+													<div class="form-survey-question">
+														<div class="flex-type">
+															<i class="icon-drag"></i>
+															<!-- Component : Dropdown -->
+															<!-- [D] 레이어 노출 : aria-expanded=true -->
+															<div class="component-dropdown-type" aria-expanded="false">
+															<span class="txt-label">
+																<!--
+																	[D] 유형 정의
+																	type-a : 객관식
+																	type-b : 객관식 + 이미지
+																	type-c : 주관식
+																	type-d : 선형 배율
+																	type-e : 별점
+																	type-f : 감정바
+																	type-g : 소주제
+																-->
+																<i class="icon-editor type-c"></i>
+															</span>
+
+																<!-- Layer : Dropdown -->
+																<div class="layer-dropdown">
+																	<div class="box-dropdown">
+																		<!-- Item : Type -->
+																		<a href="javascript:;" class="item-type">
+																			<i class="icon-editor type-a"></i>
+																			<span class="txt-type">객관식</span>
+																		</a>
+																		<!-- //Item : Type -->
+
+																		<!-- Item : Type -->
+																		<a href="javascript:;" class="item-type">
+																			<i class="icon-editor type-b"></i>
+																			<span class="txt-type">객관식 이미지</span>
+																		</a>
+																		<!-- //Item : Type -->
+
+																		<!-- Item : Type -->
+																		<a href="javascript:;" class="item-type">
+																			<i class="icon-editor type-c"></i>
+																			<span class="txt-type">주관식</span>
+																		</a>
+																		<!-- //Item : Type -->
+
+																		<!-- Item : Type -->
+																		<a href="javascript:;" class="item-type">
+																			<i class="icon-editor type-d"></i>
+																			<span class="txt-type">선형 배율</span>
+																		</a>
+																		<!-- //Item : Type -->
+
+																		<!-- Item : Type -->
+																		<a href="javascript:;" class="item-type">
+																			<i class="icon-editor type-e"></i>
+																			<span class="txt-type">별점</span>
+																		</a>
+																		<!-- //Item : Type -->
+
+																		<!-- Item : Type -->
+																		<a href="javascript:;" class="item-type">
+																			<i class="icon-editor type-f"></i>
+																			<span class="txt-type">감정바</span>
+																		</a>
+																		<!-- //Item : Type -->
+
+																		<!-- Item : Type -->
+																		<a href="javascript:;" class="item-type">
+																			<i class="icon-editor type-g"></i>
+																			<span class="txt-type">소주제</span>
+																		</a>
+																		<!-- //Item : Type -->
+																	</div>
+																</div>
+																<!-- //Layer : Dropdown -->
+															</div>
+															<!-- //Component : Dropdown -->
+														</div>
+														<div class="flex-num">
+															<span class="txt-num">3</span>
+														</div>
+														<div class="flex-input">
+															<input type="text" class="input-question" placeholder="질문을 입력해주세요.">
+														</div>
+														<div class="flex-button">
+															<!-- [D] 필수 선택 : aria-selected=true -->
+															<button type="button" class="btn-icon type-required" aria-selected="false" tooltip="필수 응답" direction="up"><i></i></button>
+
+															<button type="button" class="btn-icon type-copy" tooltip="복사" direction="up"><i></i></button>
+															<button type="button" class="btn-icon type-delete" tooltip="삭제" direction="up"><i></i></button>
+														</div>
+													</div>
+
+													<!-- 설문 유형 추가 -->
+													<div class="survey-type" aria-expanded="false">
+														<button type="button" class="btn-icon size-36 type-circle type-add" aria-label="유형 추가"><i></i></button>
+
+														<!-- Layer : 유형 추가 -->
+														<div class="layer-survey-type">
+															<!-- Item : Type -->
+															<a href="javascript:;" class="item-type">
+																<i class="icon-editor type-a"></i>
+																<span class="txt-type">객관식</span>
+															</a>
+															<!-- //Item : Type -->
+
+															<!-- Item : Type -->
+															<a href="javascript:;" class="item-type">
+																<i class="icon-editor type-b"></i>
+																<span class="txt-type">객관식 이미지</span>
+															</a>
+															<!-- //Item : Type -->
+
+															<!-- Item : Type -->
+															<a href="javascript:;" class="item-type">
+																<i class="icon-editor type-c"></i>
+																<span class="txt-type">주관식</span>
+															</a>
+															<!-- //Item : Type -->
+
+															<!-- Item : Type -->
+															<a href="javascript:;" class="item-type">
+																<i class="icon-editor type-d"></i>
+																<span class="txt-type">선형 배율</span>
+															</a>
+															<!-- //Item : Type -->
+
+															<!-- Item : Type -->
+															<a href="javascript:;" class="item-type">
+																<i class="icon-editor type-e"></i>
+																<span class="txt-type">별점</span>
+															</a>
+															<!-- //Item : Type -->
+
+															<!-- Item : Type -->
+															<a href="javascript:;" class="item-type">
+																<i class="icon-editor type-f"></i>
+																<span class="txt-type">감정바</span>
+															</a>
+															<!-- //Item : Type -->
+
+															<!-- Item : Type -->
+															<a href="javascript:;" class="item-type">
+																<i class="icon-editor type-g"></i>
+																<span class="txt-type">소주제</span>
+															</a>
+															<!-- //Item : Type -->
+														</div>
+														<!-- //Layer : 유형 추가 -->
+													</div>
+													<!-- //설문 유형 추가 -->
+												</div>
+												<!-- //설문 : 주관식 -->
+
+												<!-- 설문 : 선형 배율 -->
+												<div class="item-survey-editor type-drag">
+													<div class="form-survey-question">
+														<div class="flex-type">
+															<i class="icon-drag"></i>
+															<!-- Component : Dropdown -->
+															<!-- [D] 레이어 노출 : aria-expanded=true -->
+															<div class="component-dropdown-type" aria-expanded="false">
+															<span class="txt-label">
+																<!--
+																	[D] 유형 정의
+																	type-a : 객관식
+																	type-b : 객관식 + 이미지
+																	type-c : 주관식
+																	type-d : 선형 배율
+																	type-e : 별점
+																	type-f : 감정바
+																	type-g : 소주제
+																-->
+																<i class="icon-editor type-d"></i>
+															</span>
+
+																<!-- Layer : Dropdown -->
+																<div class="layer-dropdown">
+																	<div class="box-dropdown">
+																		<!-- Item : Type -->
+																		<a href="javascript:;" class="item-type">
+																			<i class="icon-editor type-a"></i>
+																			<span class="txt-type">객관식</span>
+																		</a>
+																		<!-- //Item : Type -->
+
+																		<!-- Item : Type -->
+																		<a href="javascript:;" class="item-type">
+																			<i class="icon-editor type-b"></i>
+																			<span class="txt-type">객관식 이미지</span>
+																		</a>
+																		<!-- //Item : Type -->
+
+																		<!-- Item : Type -->
+																		<a href="javascript:;" class="item-type">
+																			<i class="icon-editor type-c"></i>
+																			<span class="txt-type">주관식</span>
+																		</a>
+																		<!-- //Item : Type -->
+
+																		<!-- Item : Type -->
+																		<a href="javascript:;" class="item-type">
+																			<i class="icon-editor type-d"></i>
+																			<span class="txt-type">선형 배율</span>
+																		</a>
+																		<!-- //Item : Type -->
+
+																		<!-- Item : Type -->
+																		<a href="javascript:;" class="item-type">
+																			<i class="icon-editor type-e"></i>
+																			<span class="txt-type">별점</span>
+																		</a>
+																		<!-- //Item : Type -->
+
+																		<!-- Item : Type -->
+																		<a href="javascript:;" class="item-type">
+																			<i class="icon-editor type-f"></i>
+																			<span class="txt-type">감정바</span>
+																		</a>
+																		<!-- //Item : Type -->
+
+																		<!-- Item : Type -->
+																		<a href="javascript:;" class="item-type">
+																			<i class="icon-editor type-g"></i>
+																			<span class="txt-type">소주제</span>
+																		</a>
+																		<!-- //Item : Type -->
+																	</div>
+																</div>
+																<!-- //Layer : Dropdown -->
+															</div>
+															<!-- //Component : Dropdown -->
+														</div>
+														<div class="flex-num">
+															<span class="txt-num">4</span>
+														</div>
+														<div class="flex-input">
+															<input type="text" class="input-question" placeholder="질문을 입력해주세요.">
+														</div>
+														<div class="flex-level">
+															<!-- Component : Dropdown -->
+															<!-- [D] 레이어 노출 : aria-expanded=true -->
+															<div class="component-dropdown-level" aria-expanded="false">
+																<span class="txt-label">10개 레벨</span>
+
+																<!-- Layer : Dropdown -->
+																<div class="layer-dropdown">
+																	<div class="box-dropdown">
+																		<!-- Item : Level -->
+																		<div class="item-level">
+																			<input type="radio" id="level01">
+																			<label class="txt-level" for="level01">1개 레벨</label>
+																		</div>
+																		<!-- //Item : Level -->
+
+																		<!-- Item : Level -->
+																		<div class="item-level">
+																			<input type="radio" id="level01">
+																			<label class="txt-level" for="level01">2개 레벨</label>
+																		</div>
+																		<!-- //Item : Level -->
+
+																		<!-- Item : Level -->
+																		<div class="item-level">
+																			<input type="radio" id="level01">
+																			<label class="txt-level" for="level01">3개 레벨</label>
+																		</div>
+																		<!-- //Item : Level -->
+
+																		<!-- Item : Level -->
+																		<div class="item-level">
+																			<input type="radio" id="level02">
+																			<label class="txt-level" for="level02">4개 레벨</label>
+																		</div>
+																		<!-- //Item : Level -->
+
+																		<!-- Item : Level -->
+																		<div class="item-level">
+																			<input type="radio" id="level03">
+																			<label class="txt-level" for="level03">5개 레벨</label>
+																		</div>
+																		<!-- //Item : Level -->
+
+																		<!-- Item : Level -->
+																		<div class="item-level">
+																			<input type="radio" id="level01">
+																			<label class="txt-level" for="level01">1개 레벨</label>
+																		</div>
+																		<!-- //Item : Level -->
+
+																		<!-- Item : Level -->
+																		<div class="item-level">
+																			<input type="radio" id="level01">
+																			<label class="txt-level" for="level01">2개 레벨</label>
+																		</div>
+																		<!-- //Item : Level -->
+
+																		<!-- Item : Level -->
+																		<div class="item-level">
+																			<input type="radio" id="level01">
+																			<label class="txt-level" for="level01">3개 레벨</label>
+																		</div>
+																		<!-- //Item : Level -->
+
+																		<!-- Item : Level -->
+																		<div class="item-level">
+																			<input type="radio" id="level02">
+																			<label class="txt-level" for="level02">4개 레벨</label>
+																		</div>
+																		<!-- //Item : Level -->
+
+																		<!-- Item : Level -->
+																		<div class="item-level">
+																			<input type="radio" id="level03">
+																			<label class="txt-level" for="level03">5개 레벨</label>
+																		</div>
+																		<!-- //Item : Level -->
+																	</div>
+																</div>
+																<!-- //Layer : Dropdown -->
+															</div>
+															<!-- //Component : Dropdown -->
+														</div>
+														<div class="flex-button">
+															<!-- [D] 필수 선택 : aria-selected=true -->
+															<button type="button" class="btn-icon type-required" aria-selected="false" tooltip="필수 응답" direction="up"><i></i></button>
+
+															<button type="button" class="btn-icon type-copy" tooltip="복사" direction="up"><i></i></button>
+															<button type="button" class="btn-icon type-delete" tooltip="삭제" direction="up"><i></i></button>
+														</div>
+													</div>
+
+													<!-- 선형 배율 -->
+													<div class="form-survey-range">
+														<!-- 보기 -->
+														<div class="range-item">
+															<div class="flex-num">
+																<span class="txt-num">1</span>
+															</div>
+															<div class="flex-input">
+																<input type="text" class="input-answer" placeholder="라벨명">
+															</div>
+														</div>
+														<!-- //보기 -->
+
+														<!-- 보기 -->
+														<div class="range-item">
+															<div class="flex-num">
+																<span class="txt-num">10</span>
+															</div>
+															<div class="flex-input">
+																<input type="text" class="input-answer" placeholder="라벨명">
+															</div>
+														</div>
+														<!-- //보기 -->
+													</div>
+													<!-- //선형 배율 -->
+
+													<!-- 설문 유형 추가 -->
+													<div class="survey-type" aria-expanded="false">
+														<button type="button" class="btn-icon size-36 type-circle type-add" aria-label="유형 추가"><i></i></button>
+
+														<!-- Layer : 유형 추가 -->
+														<div class="layer-survey-type">
+															<!-- Item : Type -->
+															<a href="javascript:;" class="item-type">
+																<i class="icon-editor type-a"></i>
+																<span class="txt-type">객관식</span>
+															</a>
+															<!-- //Item : Type -->
+
+															<!-- Item : Type -->
+															<a href="javascript:;" class="item-type">
+																<i class="icon-editor type-b"></i>
+																<span class="txt-type">객관식 이미지</span>
+															</a>
+															<!-- //Item : Type -->
+
+															<!-- Item : Type -->
+															<a href="javascript:;" class="item-type">
+																<i class="icon-editor type-c"></i>
+																<span class="txt-type">주관식</span>
+															</a>
+															<!-- //Item : Type -->
+
+															<!-- Item : Type -->
+															<a href="javascript:;" class="item-type">
+																<i class="icon-editor type-d"></i>
+																<span class="txt-type">선형 배율</span>
+															</a>
+															<!-- //Item : Type -->
+
+															<!-- Item : Type -->
+															<a href="javascript:;" class="item-type">
+																<i class="icon-editor type-e"></i>
+																<span class="txt-type">별점</span>
+															</a>
+															<!-- //Item : Type -->
+
+															<!-- Item : Type -->
+															<a href="javascript:;" class="item-type">
+																<i class="icon-editor type-f"></i>
+																<span class="txt-type">감정바</span>
+															</a>
+															<!-- //Item : Type -->
+
+															<!-- Item : Type -->
+															<a href="javascript:;" class="item-type">
+																<i class="icon-editor type-g"></i>
+																<span class="txt-type">소주제</span>
+															</a>
+															<!-- //Item : Type -->
+														</div>
+														<!-- //Layer : 유형 추가 -->
+													</div>
+													<!-- //설문 유형 추가 -->
+												</div>
+												<!-- //설문 : 선형 배율 -->
+
+												<!-- 설문 : 별점 -->
+												<div class="item-survey-editor type-drag">
+													<div class="form-survey-question">
+														<div class="flex-type">
+															<i class="icon-drag"></i>
+															<!-- Component : Dropdown -->
+															<!-- [D] 레이어 노출 : aria-expanded=true -->
+															<div class="component-dropdown-type" aria-expanded="false">
+															<span class="txt-label">
+																<!--
+																	[D] 유형 정의
+																	type-a : 객관식
+																	type-b : 객관식 + 이미지
+																	type-c : 주관식
+																	type-d : 선형 배율
+																	type-e : 별점
+																	type-f : 감정바
+																	type-g : 소주제
+																-->
+																<i class="icon-editor type-e"></i>
+															</span>
+
+																<!-- Layer : Dropdown -->
+																<div class="layer-dropdown">
+																	<div class="box-dropdown">
+																		<!-- Item : Type -->
+																		<a href="javascript:;" class="item-type">
+																			<i class="icon-editor type-a"></i>
+																			<span class="txt-type">객관식</span>
+																		</a>
+																		<!-- //Item : Type -->
+
+																		<!-- Item : Type -->
+																		<a href="javascript:;" class="item-type">
+																			<i class="icon-editor type-b"></i>
+																			<span class="txt-type">객관식 이미지</span>
+																		</a>
+																		<!-- //Item : Type -->
+
+																		<!-- Item : Type -->
+																		<a href="javascript:;" class="item-type">
+																			<i class="icon-editor type-c"></i>
+																			<span class="txt-type">주관식</span>
+																		</a>
+																		<!-- //Item : Type -->
+
+																		<!-- Item : Type -->
+																		<a href="javascript:;" class="item-type">
+																			<i class="icon-editor type-d"></i>
+																			<span class="txt-type">선형 배율</span>
+																		</a>
+																		<!-- //Item : Type -->
+
+																		<!-- Item : Type -->
+																		<a href="javascript:;" class="item-type">
+																			<i class="icon-editor type-e"></i>
+																			<span class="txt-type">별점</span>
+																		</a>
+																		<!-- //Item : Type -->
+
+																		<!-- Item : Type -->
+																		<a href="javascript:;" class="item-type">
+																			<i class="icon-editor type-f"></i>
+																			<span class="txt-type">감정바</span>
+																		</a>
+																		<!-- //Item : Type -->
+
+																		<!-- Item : Type -->
+																		<a href="javascript:;" class="item-type">
+																			<i class="icon-editor type-g"></i>
+																			<span class="txt-type">소주제</span>
+																		</a>
+																		<!-- //Item : Type -->
+																	</div>
+																</div>
+																<!-- //Layer : Dropdown -->
+															</div>
+															<!-- //Component : Dropdown -->
+														</div>
+														<div class="flex-num">
+															<span class="txt-num">5</span>
+														</div>
+														<div class="flex-input">
+															<input type="text" class="input-question" placeholder="질문을 입력해주세요.">
+														</div>
+														<div class="flex-button">
+															<!-- [D] 필수 선택 : aria-selected=true -->
+															<button type="button" class="btn-icon type-required" aria-selected="false" tooltip="필수 응답" direction="up"><i></i></button>
+
+															<button type="button" class="btn-icon type-copy" tooltip="복사" direction="up"><i></i></button>
+															<button type="button" class="btn-icon type-delete" tooltip="삭제" direction="up"><i></i></button>
+														</div>
+													</div>
+
+													<!-- 설문 유형 추가 -->
+													<div class="survey-type" aria-expanded="false">
+														<button type="button" class="btn-icon size-36 type-circle type-add" aria-label="유형 추가"><i></i></button>
+
+														<!-- Layer : 유형 추가 -->
+														<div class="layer-survey-type">
+															<!-- Item : Type -->
+															<a href="javascript:;" class="item-type">
+																<i class="icon-editor type-a"></i>
+																<span class="txt-type">객관식</span>
+															</a>
+															<!-- //Item : Type -->
+
+															<!-- Item : Type -->
+															<a href="javascript:;" class="item-type">
+																<i class="icon-editor type-b"></i>
+																<span class="txt-type">객관식 이미지</span>
+															</a>
+															<!-- //Item : Type -->
+
+															<!-- Item : Type -->
+															<a href="javascript:;" class="item-type">
+																<i class="icon-editor type-c"></i>
+																<span class="txt-type">주관식</span>
+															</a>
+															<!-- //Item : Type -->
+
+															<!-- Item : Type -->
+															<a href="javascript:;" class="item-type">
+																<i class="icon-editor type-d"></i>
+																<span class="txt-type">선형 배율</span>
+															</a>
+															<!-- //Item : Type -->
+
+															<!-- Item : Type -->
+															<a href="javascript:;" class="item-type">
+																<i class="icon-editor type-e"></i>
+																<span class="txt-type">별점</span>
+															</a>
+															<!-- //Item : Type -->
+
+															<!-- Item : Type -->
+															<a href="javascript:;" class="item-type">
+																<i class="icon-editor type-f"></i>
+																<span class="txt-type">감정바</span>
+															</a>
+															<!-- //Item : Type -->
+
+															<!-- Item : Type -->
+															<a href="javascript:;" class="item-type">
+																<i class="icon-editor type-g"></i>
+																<span class="txt-type">소주제</span>
+															</a>
+															<!-- //Item : Type -->
+														</div>
+														<!-- //Layer : 유형 추가 -->
+													</div>
+													<!-- //설문 유형 추가 -->
+												</div>
+												<!-- 설문 : //별점 -->
+
+												<!-- 설문 : 감정바 -->
+												<div class="item-survey-editor type-drag">
+													<div class="form-survey-question">
+														<div class="flex-type">
+															<i class="icon-drag"></i>
+															<!-- Component : Dropdown -->
+															<!-- [D] 레이어 노출 : aria-expanded=true -->
+															<div class="component-dropdown-type" aria-expanded="false">
+															<span class="txt-label">
+																<!--
+																	[D] 유형 정의
+																	type-a : 객관식
+																	type-b : 객관식 + 이미지
+																	type-c : 주관식
+																	type-d : 선형 배율
+																	type-e : 별점
+																	type-f : 감정바
+																	type-g : 소주제
+																-->
+																<i class="icon-editor type-f"></i>
+															</span>
+
+																<!-- Layer : Dropdown -->
+																<div class="layer-dropdown">
+																	<div class="box-dropdown">
+																		<!-- Item : Type -->
+																		<a href="javascript:;" class="item-type">
+																			<i class="icon-editor type-a"></i>
+																			<span class="txt-type">객관식</span>
+																		</a>
+																		<!-- //Item : Type -->
+
+																		<!-- Item : Type -->
+																		<a href="javascript:;" class="item-type">
+																			<i class="icon-editor type-b"></i>
+																			<span class="txt-type">객관식 이미지</span>
+																		</a>
+																		<!-- //Item : Type -->
+
+																		<!-- Item : Type -->
+																		<a href="javascript:;" class="item-type">
+																			<i class="icon-editor type-c"></i>
+																			<span class="txt-type">주관식</span>
+																		</a>
+																		<!-- //Item : Type -->
+
+																		<!-- Item : Type -->
+																		<a href="javascript:;" class="item-type">
+																			<i class="icon-editor type-d"></i>
+																			<span class="txt-type">선형 배율</span>
+																		</a>
+																		<!-- //Item : Type -->
+
+																		<!-- Item : Type -->
+																		<a href="javascript:;" class="item-type">
+																			<i class="icon-editor type-e"></i>
+																			<span class="txt-type">별점</span>
+																		</a>
+																		<!-- //Item : Type -->
+
+																		<!-- Item : Type -->
+																		<a href="javascript:;" class="item-type">
+																			<i class="icon-editor type-f"></i>
+																			<span class="txt-type">감정바</span>
+																		</a>
+																		<!-- //Item : Type -->
+
+																		<!-- Item : Type -->
+																		<a href="javascript:;" class="item-type">
+																			<i class="icon-editor type-g"></i>
+																			<span class="txt-type">소주제</span>
+																		</a>
+																		<!-- //Item : Type -->
+																	</div>
+																</div>
+																<!-- //Layer : Dropdown -->
+															</div>
+															<!-- //Component : Dropdown -->
+														</div>
+														<div class="flex-num">
+															<span class="txt-num">6</span>
+														</div>
+														<div class="flex-input">
+															<input type="text" class="input-question" placeholder="질문을 입력해주세요.">
+														</div>
+														<div class="flex-button">
+															<!-- [D] 필수 선택 : aria-selected=true -->
+															<button type="button" class="btn-icon type-required" aria-selected="false" tooltip="필수 응답" direction="up"><i></i></button>
+
+															<button type="button" class="btn-icon type-copy" tooltip="복사" direction="up"><i></i></button>
+															<button type="button" class="btn-icon type-delete" tooltip="삭제" direction="up"><i></i></button>
+														</div>
+													</div>
+
+													<!-- 설문 유형 추가 -->
+													<div class="survey-type" aria-expanded="false">
+														<button type="button" class="btn-icon size-36 type-circle type-add" aria-label="유형 추가"><i></i></button>
+
+														<!-- Layer : 유형 추가 -->
+														<div class="layer-survey-type">
+															<!-- Item : Type -->
+															<a href="javascript:;" class="item-type">
+																<i class="icon-editor type-a"></i>
+																<span class="txt-type">객관식</span>
+															</a>
+															<!-- //Item : Type -->
+
+															<!-- Item : Type -->
+															<a href="javascript:;" class="item-type">
+																<i class="icon-editor type-b"></i>
+																<span class="txt-type">객관식 이미지</span>
+															</a>
+															<!-- //Item : Type -->
+
+															<!-- Item : Type -->
+															<a href="javascript:;" class="item-type">
+																<i class="icon-editor type-c"></i>
+																<span class="txt-type">주관식</span>
+															</a>
+															<!-- //Item : Type -->
+
+															<!-- Item : Type -->
+															<a href="javascript:;" class="item-type">
+																<i class="icon-editor type-d"></i>
+																<span class="txt-type">선형 배율</span>
+															</a>
+															<!-- //Item : Type -->
+
+															<!-- Item : Type -->
+															<a href="javascript:;" class="item-type">
+																<i class="icon-editor type-e"></i>
+																<span class="txt-type">별점</span>
+															</a>
+															<!-- //Item : Type -->
+
+															<!-- Item : Type -->
+															<a href="javascript:;" class="item-type">
+																<i class="icon-editor type-f"></i>
+																<span class="txt-type">감정바</span>
+															</a>
+															<!-- //Item : Type -->
+
+															<!-- Item : Type -->
+															<a href="javascript:;" class="item-type">
+																<i class="icon-editor type-g"></i>
+																<span class="txt-type">소주제</span>
+															</a>
+															<!-- //Item : Type -->
+														</div>
+														<!-- //Layer : 유형 추가 -->
+													</div>
+													<!-- //설문 유형 추가 -->
+												</div>
+												<!-- 설문 : //감정바 -->
+
+												<!-- 설문 : 소주제 -->
+												<div class="item-survey-editor type-drag">
+													<div class="form-survey-question">
+														<div class="flex-type">
+															<i class="icon-drag"></i>
+															<!-- Component : Dropdown -->
+															<!-- [D] 레이어 노출 : aria-expanded=true -->
+															<div class="component-dropdown-type" aria-expanded="false">
+															<span class="txt-label">
+																<!--
+																	[D] 유형 정의
+																	type-a : 객관식
+																	type-b : 객관식 + 이미지
+																	type-c : 주관식
+																	type-d : 선형 배율
+																	type-e : 별점
+																	type-f : 감정바
+																	type-g : 소주제
+																-->
+																<i class="icon-editor type-g"></i>
+															</span>
+
+																<!-- Layer : Dropdown -->
+																<div class="layer-dropdown">
+																	<div class="box-dropdown">
+																		<!-- Item : Type -->
+																		<a href="javascript:;" class="item-type">
+																			<i class="icon-editor type-a"></i>
+																			<span class="txt-type">객관식</span>
+																		</a>
+																		<!-- //Item : Type -->
+
+																		<!-- Item : Type -->
+																		<a href="javascript:;" class="item-type">
+																			<i class="icon-editor type-b"></i>
+																			<span class="txt-type">객관식 이미지</span>
+																		</a>
+																		<!-- //Item : Type -->
+
+																		<!-- Item : Type -->
+																		<a href="javascript:;" class="item-type">
+																			<i class="icon-editor type-c"></i>
+																			<span class="txt-type">주관식</span>
+																		</a>
+																		<!-- //Item : Type -->
+
+																		<!-- Item : Type -->
+																		<a href="javascript:;" class="item-type">
+																			<i class="icon-editor type-d"></i>
+																			<span class="txt-type">선형 배율</span>
+																		</a>
+																		<!-- //Item : Type -->
+
+																		<!-- Item : Type -->
+																		<a href="javascript:;" class="item-type">
+																			<i class="icon-editor type-e"></i>
+																			<span class="txt-type">별점</span>
+																		</a>
+																		<!-- //Item : Type -->
+
+																		<!-- Item : Type -->
+																		<a href="javascript:;" class="item-type">
+																			<i class="icon-editor type-f"></i>
+																			<span class="txt-type">감정바</span>
+																		</a>
+																		<!-- //Item : Type -->
+
+																		<!-- Item : Type -->
+																		<a href="javascript:;" class="item-type">
+																			<i class="icon-editor type-g"></i>
+																			<span class="txt-type">소주제</span>
+																		</a>
+																		<!-- //Item : Type -->
+																	</div>
+																</div>
+																<!-- //Layer : Dropdown -->
+															</div>
+															<!-- //Component : Dropdown -->
+														</div>
+														<div class="flex-input">
+															<input type="text" class="input-question" placeholder="질문을 입력해주세요.">
+														</div>
+														<div class="flex-button">
+															<button type="button" class="btn-icon type-copy" tooltip="복사" direction="up"><i></i></button>
+															<button type="button" class="btn-icon type-delete" tooltip="삭제" direction="up"><i></i></button>
+														</div>
+													</div>
+
+													<div class="form-survey-desc">
+														<div class="component-textarea">
+															<textarea class="textarea-desc" placeholder="설문지의 설명을 입력해주세요."></textarea>
+														</div>
+													</div>
+
+													<!-- 설문 유형 추가 -->
+													<div class="survey-type" aria-expanded="false">
+														<button type="button" class="btn-icon size-36 type-circle type-add" aria-label="유형 추가"><i></i></button>
+
+														<!-- Layer : 유형 추가 -->
+														<div class="layer-survey-type">
+															<!-- Item : Type -->
+															<a href="javascript:;" class="item-type">
+																<i class="icon-editor type-a"></i>
+																<span class="txt-type">객관식</span>
+															</a>
+															<!-- //Item : Type -->
+
+															<!-- Item : Type -->
+															<a href="javascript:;" class="item-type">
+																<i class="icon-editor type-b"></i>
+																<span class="txt-type">객관식 이미지</span>
+															</a>
+															<!-- //Item : Type -->
+
+															<!-- Item : Type -->
+															<a href="javascript:;" class="item-type">
+																<i class="icon-editor type-c"></i>
+																<span class="txt-type">주관식</span>
+															</a>
+															<!-- //Item : Type -->
+
+															<!-- Item : Type -->
+															<a href="javascript:;" class="item-type">
+																<i class="icon-editor type-d"></i>
+																<span class="txt-type">선형 배율</span>
+															</a>
+															<!-- //Item : Type -->
+
+															<!-- Item : Type -->
+															<a href="javascript:;" class="item-type">
+																<i class="icon-editor type-e"></i>
+																<span class="txt-type">별점</span>
+															</a>
+															<!-- //Item : Type -->
+
+															<!-- Item : Type -->
+															<a href="javascript:;" class="item-type">
+																<i class="icon-editor type-f"></i>
+																<span class="txt-type">감정바</span>
+															</a>
+															<!-- //Item : Type -->
+
+															<!-- Item : Type -->
+															<a href="javascript:;" class="item-type">
+																<i class="icon-editor type-g"></i>
+																<span class="txt-type">소주제</span>
+															</a>
+															<!-- //Item : Type -->
+														</div>
+														<!-- //Layer : 유형 추가 -->
+													</div>
+													<!-- //설문 유형 추가 -->
+												</div>
+												<!-- //설문 : 소주제 -->
+											</div>
+											<!-- //유형 별 설문 (드래그&드롭 영역) -->
+
+											<!-- 설문 : 종료 -->
+											<div class="item-survey-editor type-end">
+												<input type="text" class="input-end-title" value="'{제목없는 설문}' 설문이 제출되었습니다.">
+												<input type="text" class="input-end-desc" value="설문에 참여해주셔서 감사합니다.">
+											</div>
+											<!-- //설문 : 종료 -->
+										</div>
+
+									</div>
+								</div>
+
+								<!-- 설정, 자동저장 -->
+								<div class="section-setting">
+									<div class="setting-area">
+										<button type="button" class="btn-icon size-32 type-setting"><i></i></button>
+										<span class="txt-desc">실명 / 중복 응답 가능 / 응답 수정 가능</span>
+									</div>
+									<div class="save-area">
+										21.5.2 (수) 13:55:45 자동저장됨
+									</div>
+								</div>
+								<!-- //설정, 자동저장 -->
+
+								<div class="toast-block">
+									<!-- Component : Toast -->
+									<!-- [D] Toast 노출 시 : is-show 클래스 추가 -->
+									<div class="component-toast is-show">
+										<div class="box-toast">
+											<a href="javascript:;" class="btn-close" aria-label="Close"></a>
+											<span class="txt-toast">
+										설문 미리보기에서는 응답이 제출되지 않습니다.
+									</span>
+										</div>
+									</div>
+									<!-- //Component : Toast -->
+								</div>
+							</div>
+
+						</div>
+						<!-- //제작 -->
+
+						<!-- 응답 -->
+						<div class="container-answer">
+							<div class="flex-scroll">
+
+								<!-- 설문 응답 -->
+								<div class="survey-answer">
+									<!-- 대표 이미지 영역 -->
+									<div class="answer-top" style="background-color:red;">
+										<div class="title-img" style="background-image:url(../../images/img_survey_default.png);"></div>
+									</div>
+									<!-- //대표 이미지 영역 -->
+
+									<!-- 응답 영역 -->
+									<div class="answer-content">
+										<div class="inner-content">
+											<!-- 응답 : 설문 제목 -->
+											<div class="item-survey-answer-subject">
+												<strong class="txt-title">
+													설문 제목이 들어갈 곳입니다.
+												</strong>
+												<p class="txt-desc">
+													설문지의 설명이 들어갈 곳입니다.
+												</p>
+											</div>
+											<!-- //응답 : 설문 제목 -->
+
+											<!-- 응답 : 익명 설정 -->
+											<div class="item-survey-answer-anonymous">
+											<span class="txt-desc">
+												이 설문은 <strong>익명</strong>으로 진행됩니다.
+											</span>
+											</div>
+											<!-- //응답 : 익명 설정 -->
+
+											<!-- 응답 : 설문 객관식 -->
+											<!-- [D] 필수 질문 응답 없을 시 : is-error 클래스 추가 -->
+											<div class="item-survey-answer is-error" id="test1">
+												<strong class="txt-num">Q1</strong>
+												<strong class="txt-question">
+													객관식(단일/복수) 질문이 들어갈 곳입니다.
+												</strong>
+												<strong class="txt-type">복수선택이 가능합니다.</strong>
+
+												<!-- 응답 -->
+												<div class="form-survey-answer">
+													<div class="answer-objective">
+														<!-- [D] 아이템 선택 시 : aria-selected=true -->
+														<a href="javascript:;" class="item-objective" aria-selected="true">
+															<span class="txt-item">응답 옵션</span>
+														</a>
+
+														<a href="javascript:;" class="item-objective" aria-selected="false">
+															<span class="txt-item">응답 옵션</span>
+														</a>
+
+														<a href="javascript:;" class="item-objective" aria-selected="false">
+															<span class="txt-item">응답 옵션</span>
+														</a>
+
+														<!-- 기타 유형 -->
+														<div class="item-objective" aria-selected="true">
+															<span class="txt-item">기타</span>
+
+															<div class="component-textarea type-none">
+																<textarea class="input-etc"></textarea>
+															</div>
+														</div>
+														<!-- //기타 유형 -->
+													</div>
+												</div>
+												<!-- //응답 -->
+
+												<!-- 에러 메세지 -->
+												<div class="txt-error">필수 질문입니다.</div>
+												<!-- //에러 메세지 -->
+											</div>
+											<!-- //응답 : 설문 객관식 -->
+
+											<!-- 응답 : 설문 객관식 + 이미지 -->
+											<!-- [D] 필수 질문 응답 없을 시 : is-error 클래스 추가 -->
+											<div class="item-survey-answer" id="test2">
+												<strong class="txt-num">Q2</strong>
+												<strong class="txt-question">
+													객관식(이미지 포함) 질문이 들어갈 곳입니다.
+												</strong>
+
+												<!-- 응답 -->
+												<div class="form-survey-answer">
+
+													<!--
+														[D] 보기 배치 클래스 정의
+														type-a : 1개
+														type-b : 2개, 4개
+														type-c : 3개, 5개, 6개
+													-->
+													<div class="answer-image-objective type-c">
+
+														<ol class="list-objective">
+															<li>
+																<!-- [D] 아이템 선택 시 : aria-selected=true -->
+																<a href="javascript:;" class="item-image" aria-selected="false">
+																	<!-- [D] 이미지 없는 유형 : is-nodata 클래스 추가 -->
+																	<span class="img-item is-nodata" style="background-image:url();">
+																	<button type="button" class="btn-icon size-32 type-circle type-opacity type-view"><i></i></button>
+																	<span class="img-nodata"></span>
+																</span>
+																	<span class="txt-item">응답 옵션</span>
+																</a>
+															</li>
+															<li>
+																<a href="javascript:;" class="item-image" aria-selected="true">
+																	<!-- [D] 이미지 없는 유형 : is-nodata 클래스 추가 -->
+																	<span class="img-item" style="background-image:url(../../images/img_survey_default.png);">
+																	<button type="button" class="btn-icon size-32 type-circle type-opacity type-view"><i></i></button>
+																	<span class="img-nodata"></span>
+																</span>
+																	<span class="txt-item">응답 옵션</span>
+																</a>
+															</li>
+															<li>
+																<!-- 기타 유형 -->
+																<!-- [D] 아이템 선택 시 : aria-selected=true -->
+																<div class="item-image" aria-selected="true">
+																	<div class="etc-item">
+																		<div class="component-textarea type-none">
+																			<textarea class="input-etc"></textarea>
+																		</div>
+																	</div>
+																	<span class="txt-item">응답 옵션</span>
+																</div>
+																<!-- //기타 유형 -->
+															</li>
+														</ol>
+
+													</div>
+
+												</div>
+												<!-- //응답 -->
+
+												<!-- 에러 메세지 -->
+												<div class="txt-error">필수 질문입니다.</div>
+												<!-- //에러 메세지 -->
+											</div>
+											<!-- //응답 : 설문 객관식 + 이미지 -->
+
+											<!-- 응답 : 설문 주관식 -->
+											<div class="item-survey-answer" id="test3">
+												<strong class="txt-num">Q3</strong>
+												<strong class="txt-question">
+													주관식 질문이 들어갈 곳입니다.
+												</strong>
+
+												<!-- 응답 -->
+												<div class="form-survey-answer">
+													<div class="answer-subjective">
+														<div class="component-textarea">
+															<textarea class="textarea-answer" placeholder="의견을 적어주세요."></textarea>
+															<em></em>
+														</div>
+													</div>
+												</div>
+												<!-- //응답 -->
+
+												<!-- 에러 메세지 -->
+												<div class="txt-error">필수 질문입니다.</div>
+												<!-- //에러 메세지 -->
+											</div>
+											<!-- //응답 : 설문 주관식 -->
+
+											<!-- 응답 : 설문 선형 배율 -->
+											<div class="item-survey-answer" id="test4">
+												<strong class="txt-num">Q4</strong>
+												<strong class="txt-question">
+													선형 배율 질문이 들어갈 곳입니다.
+												</strong>
+
+												<!-- 응답 -->
+												<div class="form-survey-answer">
+													<div class="answer-linear">
+														<div class="linear-items">
+															<!-- [D] 아이템 선택 시 : aria-selected=true -->
+															<a href="javascript:;" class="item-linear" aria-selected="false">1</a>
+															<a href="javascript:;" class="item-linear" aria-selected="false">2</a>
+															<a href="javascript:;" class="item-linear" aria-selected="true">3</a>
+															<a href="javascript:;" class="item-linear" aria-selected="false">4</a>
+															<a href="javascript:;" class="item-linear" aria-selected="false">5</a>
+														</div>
+														<div class="linear-label">
+															<div class="txt-first">불만족</div>
+															<div class="txt-last">만족</div>
+														</div>
+													</div>
+												</div>
+												<!-- //응답 -->
+
+												<!-- 에러 메세지 -->
+												<div class="txt-error">필수 질문입니다.</div>
+												<!-- //에러 메세지 -->
+											</div>
+											<!-- //응답 : 설문 선형 배율 -->
+
+											<!-- 응답 : 설문 별점 -->
+											<div class="item-survey-answer" id="test5">
+												<strong class="txt-num">Q5</strong>
+												<strong class="txt-question">
+													별점 질문이 들어갈 곳입니다.
+												</strong>
+
+												<!-- 응답 -->
+												<div class="form-survey-answer">
+													<div class="answer-star-rating">
+														<div class="group-rating">
+															<div class="item-rating">
+																<input type="radio" name="star-rating" value="5" id="rating-50">
+																<label class="label-rating" for="rating-50"></label>
+																<input type="radio" name="star-rating" value="4.5" id="rating-45">
+																<label class="label-rating type-half" for="rating-45"></label>
+
+																<input type="radio" name="star-rating" value="4" id="rating-40">
+																<label class="label-rating" for="rating-40"></label>
+																<input type="radio" name="star-rating" value="3.5" id="rating-35">
+																<label class="label-rating type-half" for="rating-35"></label>
+
+																<input type="radio" name="star-rating" value="3" id="rating-30">
+																<label class="label-rating" for="rating-30"></label>
+																<input type="radio" name="star-rating" value="2.5" id="rating-25">
+																<label class="label-rating type-half" for="rating-25"></label>
+
+																<input type="radio" name="star-rating" value="2" id="rating-20">
+																<label class="label-rating" for="rating-20"></label>
+																<input type="radio" name="star-rating" value="1.5" id="rating-15">
+																<label class="label-rating type-half" for="rating-15"></label>
+
+																<input type="radio" name="star-rating" value="1" id="rating-10">
+																<label class="label-rating" for="rating-10"></label>
+																<input type="radio" name="star-rating" value="0.5" id="rating-05">
+																<label class="label-rating type-half" for="rating-05"></label>
+															</div>
+														</div>
+														<div class="group-score">
+															<div class="item-score">
+																<strong class="txt-rating">2.5점</strong>
+																<em>/</em>
+																<span class="txt-total">5점</span>
+															</div>
+														</div>
+													</div>
+												</div>
+												<!-- //응답 -->
+
+												<!-- 에러 메세지 -->
+												<div class="txt-error">필수 질문입니다.</div>
+												<!-- //에러 메세지 -->
+											</div>
+											<!-- //응답 : 설문 별점 -->
+
+											<!-- 응답 : 설문 감정바 -->
+											<div class="item-survey-answer" id="test6">
+												<strong class="txt-num">Q6</strong>
+												<strong class="txt-question">
+													감정바 질문이 들어갈 곳입니다.
+												</strong>
+
+												<!-- 응답 -->
+												<div class="form-survey-answer">
+
+													<div class="answer-range-slider">
+														<!-- Component : RANGE SLIDER -->
+														<div class="component-slider">
+															<div class="is-a">
+																<input type="text" id="rangeSlider01">
+															</div>
+														</div>
+														<!-- Component : RANGE SLIDER -->
+
+														<div class="total-group">
+															<strong class="txt-value">0</strong>
+															<em>/</em>
+															<span class="txt-total">100%</span>
+														</div>
+													</div>
+
+												</div>
+												<!-- //응답 -->
+
+												<!-- 에러 메세지 -->
+												<div class="txt-error">필수 질문입니다.</div>
+												<!-- //에러 메세지 -->
+											</div>
+											<!-- //응답 : 설문 감정바 -->
+
+											<!-- 응답 : 설문 소주제 -->
+											<div class="item-survey-answer type-sub">
+												<strong class="txt-title-sub">
+													소주제의 제목이 들어갈 곳입니다.
+												</strong>
+												<p class="txt-desc-sub">
+													소주제의 설명이 들어갈 곳입니다.
+												</p>
+											</div>
+											<!-- //응답 : 설문 소주제 -->
+
+											<!-- 제출 버튼 -->
+											<div class="buttons">
+												<button type="button" class="btn-primary">응답 제출</button>
+											</div>
+											<!-- 제출 버튼 -->
+										</div>
+									</div>
+									<!-- //응답 영역 -->
+
+
+									<!-- 응답 완료 -->
+									<div class="answer-msg">
+										<span class="txt-msg">응답자에게 별도 페이지로 보여집니다.</span>
+									</div>
+									<div class="answer-nodata type-complete">
+										<strong class="txt-title">조직 건강성 측정 설문이 제출되었습니다.</strong>
+										<span class="txt-desc">설문에 참여해주셔서 감사합니다.</span>
+
+										<div class="buttons">
+											<button type="button" class="btn-primary">응답 수정</button>
+										</div>
+									</div>
+									<!-- //응답 완료 -->
+								</div>
+								<!-- //설문 응답 -->
+
+							</div>
+						</div>
+						<!-- //응답 -->
+					</div>
+				</div>
+
+			</div>
+			<!-- //Page : Editor (설문 제작) -->
+
+		</div>
+		<!-- //Content -->
+
+	</div>
+	<!-- //Wrap -->
+
+</body>
+</html>

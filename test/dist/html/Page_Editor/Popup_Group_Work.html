@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+	<link rel="stylesheet" href="../../css/survey.css"/>
+	<title>Survey</title>
+</head>
+
+<body>
+
+	<!-- Wrap : Popup -->
+	<div class="popup-wrap">
+
+		<div class="layout-popup">
+			<div class="popup-group-work">
+				<div class="section-title">
+					<h2 class="txt-title">공동 작업</h2>
+					<div class="button-area">
+						<button type="button" class="btn-icon type-light type-share"><i></i></button>
+						<button type="button" class="btn-icon type-light type-close"><i></i></button>
+					</div>
+				</div>
+
+				<div class="section-desc">
+					<p class="txt-desc">뷰어로 추가된 멤버는 설문 제작, 공유, 결과를 함께 볼 수 있어요.</p>
+				</div>
+
+				<!-- 검색 -->
+				<div class="section-search">
+					<!-- Component : AutoComplete -->
+					<div class="component-autocomplete">
+						<!-- [D] 키 입력되면 is-clear 클래스 추가 -->
+						<div class="box-search is-clear">
+							<input type="text" class="input-search" placeholder="멤버 또는 조직명을 검색해보세요.">
+							<button type="button" class="btn-clear"></button>
+						</div>
+
+						<!-- Layer : 검색 결과 -->
+						<!-- [D] 레이어 노출 : aria-expanded=true -->
+						<div class="layer-autocomplete" aria-expanded="false">
+							<div class="box-layer">
+								<!-- 검색 결과 -->
+								<div class="search-result">
+									<strong class="txt-result">검색 결과<em>14</em></strong>
+
+									<div class="list-result">
+										<!-- Common UI : 사용자 정보 -->
+										<div class="common-ui-user-info">
+											<div class="flex-img">
+												<img src="../../images/img_default.png">
+											</div>
+											<div class="flex-auto">
+												<div class="user-info">
+													<span class="txt-name"><em>j</em><em>o</em>ey.lee (이조이)</span>
+													<span class="txt-class">팀원 / 대화형 플랫폼셀</span>
+												</div>
+											</div>
+										</div>
+										<!-- //Common UI : 사용자 정보 -->
+
+										<!-- Common UI : 사용자 정보 -->
+										<div class="common-ui-user-info">
+											<div class="flex-img">
+												<img src="../../images/img_default.png">
+											</div>
+											<div class="flex-auto">
+												<div class="user-info">
+													<span class="txt-name"><em>j</em><em>o</em>ey.lee (이조이)</span>
+													<span class="txt-class">팀원 / 대화형 플랫폼셀</span>
+												</div>
+											</div>
+										</div>
+										<!-- //Common UI : 사용자 정보 -->
+
+										<!-- Common UI : 그룹 정보 -->
+										<div class="common-ui-group-info">
+											<div class="flex-img">
+												<img src="../../images/img_group_default.png">
+											</div>
+											<div class="flex-auto">
+												<div class="group-info">
+													<em class="txt-total">999</em>
+													<span class="txt-group"><em>카</em>카오엔터프라이즈</span>
+												</div>
+											</div>
+										</div>
+										<!-- //Common UI : 그룹 정보 -->
+									</div>
+								</div>
+								<!-- //검색 결과 -->
+
+								<!-- Nodata -->
+								<div class="nodata-result">
+									<span class="txt-nodata">검색 결과를 찾을 수 없어요.</span>
+								</div>
+								<!-- //Nodata -->
+							</div>
+						</div>
+						<!-- //Layer : 검색 결과 -->
+					</div>
+					<!-- //Component : AutoComplete -->
+
+					<div class="desc-area">
+						선택한 멤버의 제작함에 설문이 추가됩니다.
+					</div>
+				</div>
+				<!-- 검색 -->
+
+				<!-- 목록 -->
+				<div class="section-list">
+					<!-- 소유자 -->
+					<!-- Common UI : 사용자 정보 -->
+					<div class="common-ui-user-info type-work">
+						<div class="flex-img">
+							<img src="../../images/img_default.png">
+						</div>
+						<div class="flex-auto">
+							<div class="user-info">
+								<span class="txt-name">joey.lee (이조이)</span>
+								<span class="txt-class">팀원 / 대화형 플랫폼셀</span>
+							</div>
+						</div>
+						<div class="flex-dropdown">
+							<span class="txt-owner">소유자</span>
+						</div>
+					</div>
+					<!-- //Common UI : 사용자 정보 -->
+					<!-- //소유자 -->
+
+					<!-- 추가 된 멤버 -->
+					<ul class="list-member">
+						<li>
+							<!-- Common UI : 사용자 정보 -->
+							<div class="common-ui-user-info type-work">
+								<div class="flex-img">
+									<img src="../../images/img_default.png">
+								</div>
+								<div class="flex-auto">
+									<div class="user-info">
+										<span class="txt-name">joey.lee (이조이)</span>
+										<span class="txt-class">팀원 / 대화형 플랫폼셀</span>
+									</div>
+								</div>
+								<div class="flex-dropdown">
+									<!-- Component : Dropdown -->
+									<!-- [D] 레이어 노출 : aria-expanded=true -->
+									<div class="component-dropdown-time type-large" aria-expanded="false">
+										<span class="txt-label">뷰어</span>
+
+										<!-- Layer : Dropdown -->
+										<div class="layer-dropdown">
+											<div class="box-dropdown">
+												<div class="item-option">
+													<input type="radio" id="option02">
+													<label class="txt-label" for="option02">뷰어</label>
+												</div>
+
+												<div class="item-option">
+													<input type="radio" id="option03">
+													<label class="txt-label" for="option03">멤버 삭제</label>
+												</div>
+											</div>
+										</div>
+										<!-- //Layer : Dropdown -->
+									</div>
+									<!-- //Component : Dropdown -->
+								</div>
+							</div>
+							<!-- //Common UI : 사용자 정보 -->
+						</li>
+						<li>
+							<!-- Common UI : 사용자 정보 -->
+							<div class="common-ui-user-info type-work">
+								<div class="flex-img">
+									<img src="../../images/img_default.png">
+								</div>
+								<div class="flex-auto">
+									<div class="user-info">
+										<span class="txt-name">joey.lee (이조이)</span>
+										<span class="txt-class">팀원 / 대화형 플랫폼셀</span>
+									</div>
+								</div>
+								<div class="flex-dropdown">
+									<!-- Component : Dropdown -->
+									<!-- [D] 레이어 노출 : aria-expanded=true -->
+									<div class="component-dropdown-time type-large" aria-expanded="true">
+										<span class="txt-label">뷰어</span>
+
+										<!-- Layer : Dropdown -->
+										<div class="layer-dropdown">
+											<div class="box-dropdown">
+												<div class="item-option">
+													<input type="radio" id="option02">
+													<label class="txt-label" for="option02">뷰어</label>
+												</div>
+
+												<div class="item-option">
+													<input type="radio" id="option03">
+													<label class="txt-label" for="option03">멤버 삭제</label>
+												</div>
+											</div>
+										</div>
+										<!-- //Layer : Dropdown -->
+									</div>
+									<!-- //Component : Dropdown -->
+								</div>
+							</div>
+							<!-- //Common UI : 사용자 정보 -->
+						</li>
+					</ul>
+					<!-- //추가 된 멤버 -->
+
+					<!-- No data -->
+					<!-- [D] 노출 : aria-hidden=false -->
+					<div class="nodata-area" aria-hidden="true">
+						<span class="txt-nodata">작업을 공유하는 멤버가없습니다</span>
+					</div>
+					<!-- //No data -->
+				</div>
+				<!-- //목록 -->
+
+				<!-- 접근 권한 -->
+				<div class="section-auth">
+					<div class="auth-area">
+						<div class="set-block">
+							<!-- Component : Dropdown -->
+							<!-- [D] 레이어 노출 : aria-expanded=true -->
+							<div class="component-dropdown-time type-large is-disabled" aria-expanded="false">
+								<span class="txt-label">특정 멤버</span>
+
+								<!-- Layer : Dropdown -->
+								<div class="layer-dropdown">
+									<div class="box-dropdown">
+										<div class="item-option">
+											<input type="radio" id="option02">
+											<label class="txt-label" for="option02">전체</label>
+										</div>
+
+										<div class="item-option">
+											<input type="radio" id="option03">
+											<label class="txt-label" for="option03">특정 멤버</label>
+										</div>
+									</div>
+								</div>
+								<!-- //Layer : Dropdown -->
+							</div>
+							<!-- //Component : Dropdown -->
+						</div>
+
+						<div class="title-block">
+							<strong class="txt-title">접근 권한</strong>
+							<span class="txt-desc">
+								뷰어로 추가된 멤버만 설문을 볼 수 있습니다.
+							</span>
+						</div>
+					</div>
+				</div>
+				<!-- //접근 권한 -->
+			</div>
+		</div>
+
+		<div class="toast-block">
+			<!-- Component : Toast -->
+			<!-- [D] Toast 노출 시 : is-show 클래스 추가 -->
+			<div class="component-toast is-show">
+				<div class="box-toast">
+					<a href="javascript:;" class="btn-close" aria-label="Close"></a>
+					<span class="txt-toast">
+						설문 미리보기에서는 응답이 제출되지 않습니다.
+					</span>
+				</div>
+			</div>
+			<!-- //Component : Toast -->
+		</div>
+
+	</div>
+	<!-- //Wrap : Popup -->
+
+</body>
+</html>

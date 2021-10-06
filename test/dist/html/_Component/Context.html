@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../css/survey.css"/>
+	<title>Survey</title>
+	<style>
+		h1 {
+			font-size: 30px;
+			padding: 30px 0 20px;
+		}
+
+		.float-wrap:after {
+			display: block;
+			clear: both;
+			content: '';
+		}
+
+		.left {
+			float: left;
+			width: 10%;
+		}
+
+		.right {
+			float: right;
+			width: 74%;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div class="float-wrap">
+
+		<!-- 왼쪽 -->
+		<div class="left">
+		</div>
+		<!-- //왼쪽 -->
+
+		<!-- 오른쪽 -->
+		<div class="right">
+			<h1>Context</h1>
+
+			<!-- Component : Context -->
+			<div class="component-context">
+				<button type="button" class="btn-context"></button>
+
+				<!-- Layer : Context -->
+				<!-- [D] 레이어 노출 시 : aria-expanded=true -->
+				<div class="layer-context" aria-expanded="true">
+					<div class="box-context">
+						<a href="javascript:;" class="item-context">응답 URL 복사</a>
+						<a href="javascript:;" class="item-context">설문 복사</a>
+						<a href="javascript:;" class="item-context">설문 삭제</a>
+					</div>
+				</div>
+				<!-- //Layer : Context -->
+			</div>
+			<!-- //Component : Context -->
+
+			<br><br><br><br>
+			<br><br><br><br>
+
+			<h1>Context : Editor</h1>
+
+			<!-- Component : Context Editor -->
+			<div class="component-context-editor">
+				<button type="button" class="btn-icon type-context" tooltip="더보기" direction="up">
+					<i></i>
+				</button>
+
+				<!-- Layer : Context -->
+				<!-- [D] 레이어 노출 시 : aria-expanded=true -->
+				<div class="layer-context" aria-expanded="true">
+					<div class="box-context">
+						<label class="item-context" for="toggle01">
+							<span class="txt-label">'기타' 항목 추가</span>
+							<!-- Component : Toggle -->
+							<span class="component-toggle type-dark">
+								<input type="checkbox" id="toggle01">
+								<label class="txt-label" for="toggle01">
+							</span>
+							<!-- //Component : Toggle -->
+						</label>
+
+						<label class="item-context" for="toggle02">
+							<span class="txt-label">복수 선택 허용</span>
+							<!-- Component : Toggle -->
+							<span class="component-toggle type-dark">
+								<input type="checkbox" id="toggle02">
+								<label class="txt-label" for="toggle02">
+							</span>
+							<!-- //Component : Toggle -->
+						</label>
+					</div>
+				</div>
+				<!-- //Layer : Context -->
+			</div>
+			<!-- //Component : Context Editor -->
+		</div>
+		<!-- //오른쪽 -->
+
+	</div>
+
+</body>
+</html>
