@@ -4,6 +4,7 @@
     <list default="true" id="340e558f-9b82-4ed9-956e-19592bcbeafe" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/dist/html/Page_Home/Page_Survey_Create.html" afterPath="$PROJECT_DIR$/test/dist/html/Page_Home/Page_Survey_Create.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/dist/html/Page_Home/Page_Survey_Participate.html" afterPath="$PROJECT_DIR$/test/dist/html/Page_Home/Page_Survey_Participate.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,15 +18,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Page_Survey_Create.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Page_Survey_Create.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/dist/html/Page_Home/Page_Survey_Create.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="152">
-              <caret line="8" column="55" lean-forward="false" selection-start-line="8" selection-start-column="55" selection-end-line="8" selection-end-column="55" />
+              <caret line="8" column="4" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="9" selection-end-column="57" />
               <folding>
                 <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Page_Survey_Participate.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/dist/html/Page_Home/Page_Survey_Participate.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="7" column="58" lean-forward="false" selection-start-line="7" selection-start-column="58" selection-end-line="7" selection-end-column="58" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -53,6 +64,7 @@
         <option value="$PROJECT_DIR$/test/dist/html/Page_Share/Page_Share_Member.html" />
         <option value="$PROJECT_DIR$/test/dist/css/survey.css" />
         <option value="$PROJECT_DIR$/test/dist/html/Page_Home/Page_Survey_Create.html" />
+        <option value="$PROJECT_DIR$/test/dist/html/Page_Home/Page_Survey_Participate.html" />
       </list>
     </option>
   </component>
@@ -102,6 +114,21 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="dist" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="web2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web2" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
+              <item name="html" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="web2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web2" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
+              <item name="html" type="462c0819:PsiDirectoryNode" />
+              <item name="Page_Home" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -145,12 +172,12 @@
       <workItem from="1612836317128" duration="10607000" />
       <workItem from="1633479355863" duration="5561000" />
       <workItem from="1633494202144" duration="2781000" />
-      <workItem from="1634630480520" duration="209000" />
+      <workItem from="1634630480520" duration="511000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19158000" />
+    <option name="totallyTimeSpent" value="19460000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-3791" y="23" width="1871" height="1057" extended-state="6" />
@@ -318,11 +345,19 @@
     <entry file="file://$PROJECT_DIR$/test/dist/html/Page_Home/Page_Survey_Create.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
-          <caret line="8" column="55" lean-forward="false" selection-start-line="8" selection-start-column="55" selection-end-line="8" selection-end-column="55" />
+          <caret line="8" column="4" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="9" selection-end-column="57" />
           <folding>
             <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/dist/html/Page_Home/Page_Survey_Participate.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="58" lean-forward="false" selection-start-line="7" selection-start-column="58" selection-end-line="7" selection-end-column="58" />
+          <folding />
         </state>
       </provider>
     </entry>
