@@ -21,7 +21,7 @@
         <entry file="file://$PROJECT_DIR$/test/dist/html/Page_Home/Page_Survey_Create.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="152">
-              <caret line="8" column="53" lean-forward="false" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
+              <caret line="8" column="55" lean-forward="false" selection-start-line="8" selection-start-column="55" selection-end-line="8" selection-end-column="55" />
               <folding>
                 <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -145,12 +145,12 @@
       <workItem from="1612836317128" duration="10607000" />
       <workItem from="1633479355863" duration="5561000" />
       <workItem from="1633494202144" duration="2781000" />
-      <workItem from="1634630480520" duration="38000" />
+      <workItem from="1634630480520" duration="209000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18987000" />
+    <option name="totallyTimeSpent" value="19158000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-3791" y="23" width="1871" height="1057" extended-state="6" />
@@ -318,7 +318,7 @@
     <entry file="file://$PROJECT_DIR$/test/dist/html/Page_Home/Page_Survey_Create.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
-          <caret line="8" column="53" lean-forward="false" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
+          <caret line="8" column="55" lean-forward="false" selection-start-line="8" selection-start-column="55" selection-end-line="8" selection-end-column="55" />
           <folding>
             <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
