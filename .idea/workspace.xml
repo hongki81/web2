@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="340e558f-9b82-4ed9-956e-19592bcbeafe" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/dist/html/Page_Home/Page_Survey_Create.html" afterPath="$PROJECT_DIR$/test/dist/html/Page_Home/Page_Survey_Create.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/dist/js/ui.js" afterPath="$PROJECT_DIR$/test/dist/js/ui.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -34,8 +33,8 @@
       <file leaf-file-name="ui.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/dist/js/ui.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+            <state relative-caret-position="540">
+              <caret line="181" column="1" lean-forward="false" selection-start-line="181" selection-start-column="1" selection-end-line="181" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -191,12 +190,12 @@
       <workItem from="1633479355863" duration="5561000" />
       <workItem from="1633494202144" duration="2781000" />
       <workItem from="1634630480520" duration="946000" />
-      <workItem from="1634776631947" duration="525000" />
+      <workItem from="1634776631947" duration="1379000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20420000" />
+    <option name="totallyTimeSpent" value="21274000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="49" y="23" width="1631" height="1027" extended-state="6" />
@@ -394,8 +393,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/dist/js/ui.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        <state relative-caret-position="540">
+          <caret line="181" column="1" lean-forward="false" selection-start-line="181" selection-start-column="1" selection-end-line="181" selection-end-column="1" />
           <folding />
         </state>
       </provider>

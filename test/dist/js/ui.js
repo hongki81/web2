@@ -1,10 +1,4 @@
 $(document).ready(function(){
-    screen.orientation.lock();
-    screen.addEventListener("orientationchange", function () {
-        alert("The orientation of the screen is: " + screen.orientation);
-    });
-    screen.lockOrientation('landscape');
-
     // 응답 > 감정바 Range Slider
     $("#rangeSlider01").ionRangeSlider({
         type: "single",
@@ -161,4 +155,28 @@ function moveAnswerRequired(target) {
     var $itemHeight = ($(window).height() / 2) - ($(target).height() / 2);
 
     $scroll.stop().animate({scrollTop : ($target.offsetTop - $itemHeight)}, 500);
+}
+
+$(window).bind('orientationchange resize', function(event){
+    if (event.orientation) {
+        alert(event.orientation);
+        if (event.orientation === 'landscape') {
+            if (window.rotation === 90) {
+                rotate(this, -90);
+            } else {
+                rotate(this, 90);
+            }
+        }
+    }
+});
+
+function rotate(el, degs) {
+    transform = 'rotate('+degs+'deg)';
+    styles = {
+        transform: transform,
+        '-webkit-transform': transform,
+        '-moz-transform': transform,
+        '-o-transform': transform,
+    };
+    $(el).css(styles);
 }
