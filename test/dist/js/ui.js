@@ -1,8 +1,9 @@
 $(document).ready(function(){
     screen.orientation.lock();
-    screen.lockOrientation('landscape', function(){
-        console.log('landscape');
+    screen.addEventListener("orientationchange", function () {
+        alert("The orientation of the screen is: " + screen.orientation);
     });
+    screen.lockOrientation('landscape');
 
     // 응답 > 감정바 Range Slider
     $("#rangeSlider01").ionRangeSlider({
