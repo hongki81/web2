@@ -1,4 +1,9 @@
 $(document).ready(function(){
+    screen.orientation.lock();
+    screen.lockOrientation('landscape', function(){
+        console.log('landscape');
+    });
+
     // 응답 > 감정바 Range Slider
     $("#rangeSlider01").ionRangeSlider({
         type: "single",
