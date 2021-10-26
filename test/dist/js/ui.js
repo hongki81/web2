@@ -24,7 +24,7 @@ $(document).ready(function(){
             }
         },
         onStart: function(data){
-            data.from = 66;
+            data.from = 22;
             $(data.input).parents('.component-slider').next().children('.txt-value').text(data.from);
 
             if(data.from >= 0 && data.from <= 20) {
@@ -43,8 +43,6 @@ $(document).ready(function(){
             $(data.input).prev('.irs').find('.irs-slider').removeClass('is-change');
             $(data.input).blur();
             $(data.input).trigger('blur');
-
-            alert('finish16');
         }
     });
 
