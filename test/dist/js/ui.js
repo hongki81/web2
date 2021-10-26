@@ -41,9 +41,9 @@ $(document).ready(function(){
         },
         onFinish: function(data){
             $(data.input).prev('.irs').find('.irs-slider').removeClass('is-change');
-            $(data.input).focusout();
+            $(data.input).blur();
 
-            alert('finish10');
+            alert('finish12');
         }
     });
 
