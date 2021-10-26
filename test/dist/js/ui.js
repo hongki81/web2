@@ -8,7 +8,8 @@ $(document).ready(function(){
         step: 1,
         postfix: "%",
         onChange: function(data){
-            $(".total-group .txt-value").text(data.from);
+            $(data.input).prev('.irs').find('.irs-slider').removeClass('is-finish');
+            $(data.input).parents('.component-slider').next().children('.txt-value').text(data.from);
 
             if(data.from >= 0 && data.from <= 20) {
                 $(data.input).parent().attr('class','is-a');
@@ -21,6 +22,28 @@ $(document).ready(function(){
             } else {
                 $(data.input).parent().attr('class','is-e');
             }
+        },
+        onStart: function(data){
+            data.from = 66;
+
+            $(data.input).parents('.component-slider').next().children('.txt-value').text(data.from);
+
+            if(data.from >= 0 && data.from <= 20) {
+                $(data.input).parent().attr('class','is-a');
+            } else if(data.from >= 21 && data.from <= 40) {
+                $(data.input).parent().attr('class','is-b');
+            } else if(data.from >= 41 && data.from <= 60) {
+                $(data.input).parent().attr('class','is-c');
+            } else if(data.from >= 61 && data.from <= 80) {
+                $(data.input).parent().attr('class','is-d');
+            } else {
+                $(data.input).parent().attr('class','is-e');
+            }
+        },
+        onFinish: function(data){
+            $(data.input).prev('.irs').find('.irs-slider').addClass('is-finish');
+
+            alert('finish');
         }
     });
 
