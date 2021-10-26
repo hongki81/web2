@@ -8,7 +8,7 @@ $(document).ready(function(){
         step: 1,
         postfix: "%",
         onChange: function(data){
-            $(data.input).prev('.irs').find('.irs-slider').removeClass('is-finish');
+            $(data.input).prev('.irs').find('.irs-slider').addClass('is-change');
             $(data.input).parents('.component-slider').next().children('.txt-value').text(data.from);
 
             if(data.from >= 0 && data.from <= 20) {
@@ -25,7 +25,6 @@ $(document).ready(function(){
         },
         onStart: function(data){
             data.from = 66;
-
             $(data.input).parents('.component-slider').next().children('.txt-value').text(data.from);
 
             if(data.from >= 0 && data.from <= 20) {
@@ -41,11 +40,10 @@ $(document).ready(function(){
             }
         },
         onFinish: function(data){
-            $(data.input).prev('.irs').find('.irs-slider').addClass('is-finish');
-
-            alert('finish04');
-
+            $(data.input).prev('.irs').find('.irs-slider').removeClass('is-change');
             $(data.input).focusout();
+
+            alert('finish10');
         }
     });
 
