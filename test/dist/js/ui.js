@@ -83,20 +83,19 @@ $(document).ready(function(){
     //     }
     // });
 
-    // 제작 > Textarea
-    $(".component-textarea").on("keyup keydown keypress", "textarea", function(e){
-        if(e.type === "keypress") {
-            if($(e.currentTarget).parent().hasClass("type-none") && e.keyCode === 13) {
+    $(".component-textarea").on("keyup keydown input", "textarea", function(e){
+        var $this = $(e.currentTarget);
+
+        if(e.type === "keydown" && e.keyCode === 13) {
+            if(!$this.parent().hasClass("type-none")) {
+                $this.css({height : (e.currentTarget.scrollHeight) + parseInt($this.css('line-height'))});
+            } else {
                 e.preventDefault();
             }
         } else {
-            $(e.currentTarget).css({height : 0});
-            $(e.currentTarget).height(this.scrollHeight);
+            $this.css({height : 0});
+            $this.height(e.currentTarget.scrollHeight);
         }
-    });
-    $('.component-textarea').find('textarea').trigger("keyup");
-    $(window).resize(function(){
-        $('.component-textarea').find('textarea').trigger("keyup");
     });
 
     // 제작 > 유형 선택
