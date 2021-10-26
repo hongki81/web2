@@ -44,6 +44,8 @@ $(document).ready(function(){
             $(data.input).prev('.irs').find('.irs-slider').addClass('is-finish');
 
             alert('finish03');
+
+            $(data.input).focusout();
         }
     });
 
