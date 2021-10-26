@@ -42,7 +42,7 @@ $(document).ready(function(){
         onFinish: function(data){
             $(data.input).prev('.irs').find('.irs-slider').removeClass('is-change');
 
-            alert('finish01');
+            alert('finish02');
         }
     });
 
