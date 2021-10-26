@@ -43,7 +43,7 @@ $(document).ready(function(){
         onFinish: function(data){
             $(data.input).prev('.irs').find('.irs-slider').addClass('is-finish');
 
-            alert('finish');
+            alert('finish01');
         }
     });
 
